@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is frontend development?",
+    "answer_en": "Frontend development is the practice of producing HTML, CSS, and JavaScript for a website or web application so that users can see and interact with them directly. It involves creating the user interface (UI) and user experience (UX) of a website.\n\nKey responsibilities include:\n• Creating responsive and accessible web interfaces\n• Implementing interactive features using JavaScript\n• Ensuring cross-browser compatibility\n• Optimizing website performance\n• Collaborating with designers and backend developers",
+    "question_ar": "ما هو تطوير الواجهة الأمامية؟",
+    "answer_ar": "تطوير الواجهة الأمامية هو عملية إنتاج HTML وCSS وJavaScript لموقع ويب أو تطبيق ويب بحيث يمكن للمستخدمين رؤيتها والتفاعل معها مباشرة. يتضمن إنشاء واجهة المستخدم (UI) وتجربة المستخدم (UX) للموقع.\n\nالمسؤوليات الرئيسية تشمل:\n• إنشاء واجهات ويب متجاوبة ومتاحة\n• تنفيذ الميزات التفاعلية باستخدام JavaScript\n• ضمان التوافق مع المتصفحات المختلفة\n• تحسين أداء الموقع\n• التعاون مع المصممين ومطوري الخادم"
+  },
+  {
+    "id": 2,
+    "question_en": "What is the difference between HTML, CSS, and JavaScript?",
+    "answer_en": "HTML, CSS, and JavaScript are the three core technologies for frontend web development:\n\n**HTML (HyperText Markup Language):**\n• Structure and content of web pages\n• Defines elements like headings, paragraphs, links, images\n• Semantic markup for accessibility and SEO\n\n**CSS (Cascading Style Sheets):**\n• Styling and layout of web pages\n• Controls colors, fonts, spacing, positioning\n• Responsive design and animations\n\n**JavaScript:**\n• Programming language for interactivity\n• Handles user interactions, form validation\n• Dynamic content updates and API calls\n• Modern frameworks and libraries",
+    "question_ar": "ما الفرق بين HTML وCSS وJavaScript؟",
+    "answer_ar": "HTML وCSS وJavaScript هي التقنيات الأساسية الثلاث لتطوير الواجهة الأمامية:\n\n**HTML (لغة ترميز النص التشعبي):**\n• هيكل ومحتوى صفحات الويب\n• يحدد العناصر مثل العناوين والفقرات والروابط والصور\n• الترميز الدلالي لإمكانية الوصول وتحسين محركات البحث\n\n**CSS (أوراق الأنماط المتتالية):**\n• تصميم وتخطيط صفحات الويب\n• يتحكم في الألوان والخطوط والمسافات والمواضع\n• التصميم المتجاوب والرسوم المتحركة\n\n**JavaScript:**\n• لغة برمجة للتفاعل\n• يتعامل مع تفاعلات المستخدم والتحقق من النماذج\n• تحديثات المحتوى الديناميكي واستدعاءات API\n• الأطر والمكتبات الحديثة"
+  },
+  {
+    "id": 3,
+    "question_en": "What is responsive web design?",
+    "answer_en": "Responsive web design is an approach to web design that makes web pages render well on various devices and window or screen sizes. It ensures optimal viewing experience across desktop computers, tablets, and mobile phones.\n\nKey principles:\n• **Fluid grids:** Layout adapts to screen size\n• **Flexible images:** Images scale appropriately\n• **Media queries:** CSS rules for different screen sizes\n• **Mobile-first approach:** Design for mobile, then scale up\n• **Touch-friendly interfaces:** Larger buttons and touch targets\n\nBenefits:\n• Better user experience across all devices\n• Improved SEO rankings\n• Cost-effective (one site for all devices)\n• Future-proof design",
+    "question_ar": "ما هو التصميم المتجاوب للويب؟",
+    "answer_ar": "التصميم المتجاوب للويب هو نهج في تصميم الويب يجعل صفحات الويب تُعرض بشكل جيد على أجهزة مختلفة وأحجام نوافذ أو شاشات متنوعة. يضمن تجربة عرض مثلى عبر أجهزة الكمبيوتر المكتبية والأجهزة اللوحية والهواتف المحمولة.\n\nالمبادئ الأساسية:\n• **الشبكات المرنة:** التخطيط يتكيف مع حجم الشاشة\n• **الصور المرنة:** الصور تتحجم بشكل مناسب\n• **استعلامات الوسائط:** قواعد CSS لأحجام الشاشات المختلفة\n• **نهج الموبايل أولاً:** التصميم للمحمول ثم التوسع\n• **واجهات صديقة للمس:** أزرار أكبر وأهداف لمس\n\nالفوائد:\n• تجربة مستخدم أفضل عبر جميع الأجهزة\n• تحسين ترتيب محركات البحث\n• فعال من حيث التكلفة (موقع واحد لجميع الأجهزة)\n• تصميم مقاوم للمستقبل"
+  }
+]

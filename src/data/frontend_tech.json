@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is React and why is it popular?",
+    "answer_en": "React is a JavaScript library for building user interfaces, particularly single-page applications where data changes over time. Developed by Facebook (now Meta), React focuses on creating reusable UI components.\n\nKey features:\n• **Component-based architecture:** Reusable, encapsulated components\n• **Virtual DOM:** Efficient rendering and performance optimization\n• **JSX syntax:** HTML-like syntax in JavaScript\n• **Unidirectional data flow:** Predictable state management\n• **Large ecosystem:** Rich community and tooling\n\nWhy it's popular:\n• Easy to learn and use\n• Strong community support\n• Excellent performance\n• Backed by Meta\n• Great developer tools\n• Flexible and scalable",
+    "question_ar": "ما هو React ولماذا هو شائع؟",
+    "answer_ar": "React هو مكتبة JavaScript لبناء واجهات المستخدم، خاصة التطبيقات أحادية الصفحة حيث تتغير البيانات مع الوقت. طوره فيسبوك (الآن Meta)، يركز React على إنشاء مكونات واجهة مستخدم قابلة لإعادة الاستخدام.\n\nالميزات الرئيسية:\n• **البنية القائمة على المكونات:** مكونات قابلة لإعادة الاستخدام ومغلفة\n• **DOM الافتراضي:** تحسين الأداء والعرض الفعال\n• **صيغة JSX:** صيغة تشبه HTML في JavaScript\n• **تدفق البيانات أحادي الاتجاه:** إدارة حالة يمكن التنبؤ بها\n• **نظام بيئي كبير:** مجتمع وأدوات غنية\n\nلماذا هو شائع:\n• سهل التعلم والاستخدام\n• دعم مجتمعي قوي\n• أداء ممتاز\n• مدعوم من Meta\n• أدوات تطوير رائعة\n• مرن وقابل للتوسع"
+  },
+  {
+    "id": 2,
+    "question_en": "What are React Hooks?",
+    "answer_en": "React Hooks are functions that let you use state and other React features in functional components. Introduced in React 16.8, hooks allow you to reuse stateful logic between components without changing your component hierarchy.\n\nCommon hooks:\n• **useState:** Manage local component state\n• **useEffect:** Perform side effects (data fetching, subscriptions)\n• **useContext:** Access React context\n• **useReducer:** Manage complex state logic\n• **useMemo:** Optimize expensive calculations\n• **useCallback:** Optimize function references\n• **useRef:** Access DOM elements directly\n\nRules of hooks:\n• Only call hooks at the top level\n• Only call hooks from React functions\n• Use the eslint-plugin-react-hooks for enforcement",
+    "question_ar": "ما هي React Hooks؟",
+    "answer_ar": "React Hooks هي دوال تتيح لك استخدام الحالة وميزات React الأخرى في المكونات الوظيفية. تم تقديم الـ hooks في React 16.8، تسمح بإعادة استخدام المنطق ذو الحالة بين المكونات دون تغيير هيكل المكونات.\n\nالـ hooks الشائعة:\n• **useState:** إدارة حالة المكون المحلية\n• **useEffect:** تنفيذ التأثيرات الجانبية (جلب البيانات، الاشتراكات)\n• **useContext:** الوصول إلى سياق React\n• **useReducer:** إدارة منطق الحالة المعقدة\n• **useMemo:** تحسين الحسابات المكلفة\n• **useCallback:** تحسين مراجع الدوال\n• **useRef:** الوصول إلى عناصر DOM مباشرة\n\nقواعد الـ hooks:\n• استدعاء hooks فقط في المستوى العلوي\n• استدعاء hooks فقط من دوال React\n• استخدام eslint-plugin-react-hooks للتطبيق"
+  },
+  {
+    "id": 3,
+    "question_en": "What is the Virtual DOM in React?",
+    "answer_en": "The Virtual DOM is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM. React uses this concept to optimize rendering performance.\n\nHow it works:\n1. **Virtual representation:** React creates a virtual copy of the DOM in memory\n2. **State changes:** When state changes, React creates a new virtual DOM tree\n3. **Diffing algorithm:** React compares (diffs) the new tree with the previous tree\n4. **Reconciliation:** Only the changed elements are updated in the real DOM\n\nBenefits:\n• **Performance:** Minimizes expensive DOM operations\n• **Predictability:** Declarative updates are easier to reason about\n• **Batching:** Multiple updates can be batched together\n• **Cross-browser:** Abstracts away browser differences",
+    "question_ar": "ما هو DOM الافتراضي في React؟",
+    "answer_ar": "DOM الافتراضي هو مفهوم برمجي حيث يتم الاحتفاظ بتمثيل افتراضي لواجهة المستخدم في الذاكرة ومزامنته مع DOM الحقيقي. يستخدم React هذا المفهوم لتحسين أداء العرض.\n\nكيف يعمل:\n1. **التمثيل الافتراضي:** React ينشئ نسخة افتراضية من DOM في الذاكرة\n2. **تغييرات الحالة:** عند تغيير الحالة، React ينشئ شجرة DOM افتراضية جديدة\n3. **خوارزمية المقارنة:** React يقارن الشجرة الجديدة مع الشجرة السابقة\n4. **المصالحة:** فقط العناصر المتغيرة يتم تحديثها في DOM الحقيقي\n\nالفوائد:\n• **الأداء:** يقلل من عمليات DOM المكلفة\n• **القابلية للتنبؤ:** التحديثات التقريرية أسهل في الفهم\n• **التجميع:** يمكن تجميع تحديثات متعددة معاً\n• **عبر المتصفحات:** يجرد الاختلافات بين المتصفحات"
+  }
+]

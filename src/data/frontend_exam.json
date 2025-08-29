@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "type": "true_false",
+    "question_en": "HTML5 introduced semantic elements like <header>, <nav>, and <section>.",
+    "question_ar": "HTML5 قدم عناصر دلالية مثل <header> و <nav> و <section>.",
+    "correct_answer": true,
+    "explanation_en": "HTML5 introduced many semantic elements to provide better structure and meaning to web documents.",
+    "explanation_ar": "HTML5 قدم العديد من العناصر الدلالية لتوفير هيكل ومعنى أفضل لوثائق الويب."
+  },
+  {
+    "id": 2,
+    "type": "multiple_choice",
+    "question_en": "Which CSS property is used to create flexbox layouts?",
+    "question_ar": "أي خاصية CSS تُستخدم لإنشاء تخطيطات flexbox؟",
+    "options_en": ["display: flex", "position: flex", "layout: flexbox", "flex: true"],
+    "options_ar": ["display: flex", "position: flex", "layout: flexbox", "flex: true"],
+    "correct_answer": 0,
+    "explanation_en": "The 'display: flex' property is used to create a flex container and enable flexbox layout.",
+    "explanation_ar": "خاصية 'display: flex' تُستخدم لإنشاء حاوية مرنة وتمكين تخطيط flexbox."
+  },
+  {
+    "id": 3,
+    "type": "true_false",
+    "question_en": "JavaScript is a compiled programming language.",
+    "question_ar": "JavaScript هي لغة برمجة مترجمة.",
+    "correct_answer": false,
+    "explanation_en": "JavaScript is an interpreted language, not compiled. It's executed by JavaScript engines in browsers or Node.js runtime.",
+    "explanation_ar": "JavaScript هي لغة مفسرة وليست مترجمة. يتم تنفيذها بواسطة محركات JavaScript في المتصفحات أو بيئة تشغيل Node.js."
+  },
+  {
+    "id": 4,
+    "type": "multiple_choice",
+    "question_en": "Which React hook is used for managing component state?",
+    "question_ar": "أي React hook يُستخدم لإدارة حالة المكون؟",
+    "options_en": ["useEffect", "useState", "useContext", "useReducer"],
+    "options_ar": ["useEffect", "useState", "useContext", "useReducer"],
+    "correct_answer": 1,
+    "explanation_en": "useState is the primary hook for managing local component state in functional components.",
+    "explanation_ar": "useState هو الـ hook الأساسي لإدارة حالة المكون المحلية في المكونات الوظيفية."
+  },
+  {
+    "id": 5,
+    "type": "true_false",
+    "question_en": "CSS Grid is only suitable for two-dimensional layouts.",
+    "question_ar": "CSS Grid مناسب فقط للتخطيطات ثنائية الأبعاد.",
+    "correct_answer": false,
+    "explanation_en": "While CSS Grid excels at two-dimensional layouts, it can also be used effectively for one-dimensional layouts.",
+    "explanation_ar": "بينما يتفوق CSS Grid في التخطيطات ثنائية الأبعاد، يمكن أيضاً استخدامه بفعالية للتخطيطات أحادية البعد."
+  },
+  {
+    "id": 6,
+    "type": "multiple_choice",
+    "question_en": "What does DOM stand for?",
+    "question_ar": "ماذا يعني DOM؟",
+    "options_en": ["Document Object Model", "Data Object Management", "Dynamic Object Method", "Document Oriented Markup"],
+    "options_ar": ["نموذج كائن الوثيقة", "إدارة كائن البيانات", "طريقة الكائن الديناميكي", "ترميز موجه للوثيقة"],
+    "correct_answer": 0,
+    "explanation_en": "DOM stands for Document Object Model, which represents the structure of HTML documents as a tree of objects.",
+    "explanation_ar": "DOM يعني نموذج كائن الوثيقة، والذي يمثل هيكل وثائق HTML كشجرة من الكائنات."
+  },
+  {
+    "id": 7,
+    "type": "true_false",
+    "question_en": "The 'let' keyword in JavaScript has block scope.",
+    "question_ar": "الكلمة المفتاحية 'let' في JavaScript لها نطاق كتلة.",
+    "correct_answer": true,
+    "explanation_en": "Variables declared with 'let' have block scope, meaning they are only accessible within the block they are declared in.",
+    "explanation_ar": "المتغيرات المعلنة بـ 'let' لها نطاق كتلة، مما يعني أنها متاحة فقط داخل الكتلة التي أُعلنت فيها."
+  },
+  {
+    "id": 8,
+    "type": "multiple_choice",
+    "question_en": "Which CSS unit is relative to the viewport width?",
+    "question_ar": "أي وحدة CSS نسبية لعرض منطقة العرض؟",
+    "options_en": ["px", "em", "vw", "rem"],
+    "options_ar": ["px", "em", "vw", "rem"],
+    "correct_answer": 2,
+    "explanation_en": "vw (viewport width) is a CSS unit where 1vw equals 1% of the viewport's width.",
+    "explanation_ar": "vw (عرض منطقة العرض) هي وحدة CSS حيث 1vw يساوي 1% من عرض منطقة العرض."
+  },
+  {
+    "id": 9,
+    "type": "true_false",
+    "question_en": "React components must always return a single parent element.",
+    "question_ar": "مكونات React يجب أن ترجع دائماً عنصر أب واحد.",
+    "correct_answer": false,
+    "explanation_en": "With React Fragments or React 16+, components can return multiple elements without a wrapper.",
+    "explanation_ar": "مع React Fragments أو React 16+، يمكن للمكونات إرجاع عناصر متعددة بدون غلاف."
+  },
+  {
+    "id": 10,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of the 'key' prop in React lists?",
+    "question_ar": "ما هو الغرض من خاصية 'key' في قوائم React؟",
+    "options_en": ["Styling", "Performance optimization", "Event handling", "Data binding"],
+    "options_ar": ["التصميم", "تحسين الأداء", "معالجة الأحداث", "ربط البيانات"],
+    "correct_answer": 1,
+    "explanation_en": "The 'key' prop helps React identify which items have changed, are added, or removed for efficient re-rendering.",
+    "explanation_ar": "خاصية 'key' تساعد React في تحديد العناصر التي تغيرت أو أُضيفت أو أُزيلت لإعادة العرض بكفاءة."
+  },
+  {
+    "id": 11,
+    "type": "true_false",
+    "question_en": "CSS animations can only be triggered by hover events.",
+    "question_ar": "رسوم CSS المتحركة يمكن تشغيلها فقط بأحداث التمرير.",
+    "correct_answer": false,
+    "explanation_en": "CSS animations can be triggered by various events, classes, or even run automatically on page load.",
+    "explanation_ar": "رسوم CSS المتحركة يمكن تشغيلها بأحداث مختلفة أو فئات أو حتى تعمل تلقائياً عند تحميل الصفحة."
+  },
+  {
+    "id": 12,
+    "type": "multiple_choice",
+    "question_en": "Which method is used to add an event listener in JavaScript?",
+    "question_ar": "أي طريقة تُستخدم لإضافة مستمع أحداث في JavaScript؟",
+    "options_en": ["attachEvent()", "addEventListener()", "addListener()", "bindEvent()"],
+    "options_ar": ["attachEvent()", "addEventListener()", "addListener()", "bindEvent()"],
+    "correct_answer": 1,
+    "explanation_en": "addEventListener() is the standard method for attaching event handlers to DOM elements.",
+    "explanation_ar": "addEventListener() هي الطريقة المعيارية لربط معالجات الأحداث بعناصر DOM."
+  },
+  {
+    "id": 13,
+    "type": "true_false",
+    "question_en": "Webpack is a module bundler for JavaScript applications.",
+    "question_ar": "Webpack هو مجمع وحدات لتطبيقات JavaScript.",
+    "correct_answer": true,
+    "explanation_en": "Webpack is indeed a static module bundler for modern JavaScript applications.",
+    "explanation_ar": "Webpack هو فعلاً مجمع وحدات ثابت لتطبيقات JavaScript الحديثة."
+  },
+  {
+    "id": 14,
+    "type": "multiple_choice",
+    "question_en": "What does SPA stand for in web development?",
+    "question_ar": "ماذا يعني SPA في تطوير الويب؟",
+    "options_en": ["Single Page Application", "Server Page Architecture", "Static Page Assembly", "Secure Page Access"],
+    "options_ar": ["تطبيق صفحة واحدة", "بنية صفحة الخادم", "تجميع الصفحة الثابتة", "وصول آمن للصفحة"],
+    "correct_answer": 0,
+    "explanation_en": "SPA stands for Single Page Application, where content is dynamically loaded without full page refreshes.",
+    "explanation_ar": "SPA يعني تطبيق صفحة واحدة، حيث يتم تحميل المحتوى ديناميكياً بدون تحديث كامل للصفحة."
+  },
+  {
+    "id": 15,
+    "type": "true_false",
+    "question_en": "TypeScript is a superset of JavaScript.",
+    "question_ar": "TypeScript هو مجموعة فائقة من JavaScript.",
+    "correct_answer": true,
+    "explanation_en": "TypeScript is indeed a superset of JavaScript, adding static type definitions to the language.",
+    "explanation_ar": "TypeScript هو فعلاً مجموعة فائقة من JavaScript، يضيف تعريفات الأنواع الثابتة للغة."
+  },
+  {
+    "id": 16,
+    "type": "multiple_choice",
+    "question_en": "Which CSS preprocessor is most commonly used?",
+    "question_ar": "أي معالج CSS مسبق الأكثر استخداماً؟",
+    "options_en": ["Sass/SCSS", "Less", "Stylus", "PostCSS"],
+    "options_ar": ["Sass/SCSS", "Less", "Stylus", "PostCSS"],
+    "correct_answer": 0,
+    "explanation_en": "Sass/SCSS is the most widely adopted CSS preprocessor, offering variables, nesting, and mixins.",
+    "explanation_ar": "Sass/SCSS هو معالج CSS المسبق الأكثر انتشاراً، يوفر المتغيرات والتداخل والخلطات."
+  },
+  {
+    "id": 17,
+    "type": "true_false",
+    "question_en": "The 'async/await' syntax in JavaScript is syntactic sugar for Promises.",
+    "question_ar": "صيغة 'async/await' في JavaScript هي سكر نحوي للـ Promises.",
+    "correct_answer": true,
+    "explanation_en": "async/await is indeed syntactic sugar that makes working with Promises more readable and easier to write.",
+    "explanation_ar": "async/await هو فعلاً سكر نحوي يجعل العمل مع Promises أكثر قابلية للقراءة وأسهل في الكتابة."
+  },
+  {
+    "id": 18,
+    "type": "multiple_choice",
+    "question_en": "What is the default HTTP method for form submissions?",
+    "question_ar": "ما هي طريقة HTTP الافتراضية لإرسال النماذج؟",
+    "options_en": ["GET", "POST", "PUT", "PATCH"],
+    "options_ar": ["GET", "POST", "PUT", "PATCH"],
+    "correct_answer": 0,
+    "explanation_en": "The default method for HTML form submissions is GET, though POST is recommended for sensitive data.",
+    "explanation_ar": "الطريقة الافتراضية لإرسال نماذج HTML هي GET، رغم أن POST موصى بها للبيانات الحساسة."
+  },
+  {
+    "id": 19,
+    "type": "true_false",
+    "question_en": "CSS variables (custom properties) can be changed dynamically with JavaScript.",
+    "question_ar": "متغيرات CSS (الخصائص المخصصة) يمكن تغييرها ديناميكياً بـ JavaScript.",
+    "correct_answer": true,
+    "explanation_en": "CSS custom properties can be modified at runtime using JavaScript, making them very powerful for dynamic styling.",
+    "explanation_ar": "الخصائص المخصصة لـ CSS يمكن تعديلها في وقت التشغيل باستخدام JavaScript، مما يجعلها قوية جداً للتصميم الديناميكي."
+  },
+  {
+    "id": 20,
+    "type": "multiple_choice",
+    "question_en": "Which JavaScript method is used to convert a string to an integer?",
+    "question_ar": "أي طريقة JavaScript تُستخدم لتحويل نص إلى عدد صحيح؟",
+    "options_en": ["parseInt()", "parseFloat()", "toString()", "valueOf()"],
+    "options_ar": ["parseInt()", "parseFloat()", "toString()", "valueOf()"],
+    "correct_answer": 0,
+    "explanation_en": "parseInt() is used to parse a string and return an integer.",
+    "explanation_ar": "parseInt() تُستخدم لتحليل نص وإرجاع عدد صحيح."
+  },
+  {
+    "id": 21,
+    "type": "true_false",
+    "question_en": "React components can only receive data through props.",
+    "question_ar": "مكونات React يمكنها استقبال البيانات فقط من خلال props.",
+    "correct_answer": false,
+    "explanation_en": "React components can receive data through props, context, state, and external data sources like APIs.",
+    "explanation_ar": "مكونات React يمكنها استقبال البيانات من خلال props والسياق والحالة ومصادر البيانات الخارجية مثل APIs."
+  },
+  {
+    "id": 22,
+    "type": "multiple_choice",
+    "question_en": "Which CSS property controls the stacking order of elements?",
+    "question_ar": "أي خاصية CSS تتحكم في ترتيب تكديس العناصر؟",
+    "options_en": ["z-index", "stack-order", "layer", "position"],
+    "options_ar": ["z-index", "stack-order", "layer", "position"],
+    "correct_answer": 0,
+    "explanation_en": "z-index controls the stacking order of positioned elements along the z-axis.",
+    "explanation_ar": "z-index تتحكم في ترتيب تكديس العناصر المموضعة على المحور z."
+  },
+  {
+    "id": 23,
+    "type": "true_false",
+    "question_en": "Local Storage data persists even after the browser is closed.",
+    "question_ar": "بيانات التخزين المحلي تستمر حتى بعد إغلاق المتصفح.",
+    "correct_answer": true,
+    "explanation_en": "Local Storage data persists until explicitly cleared by the user or application, unlike Session Storage.",
+    "explanation_ar": "بيانات التخزين المحلي تستمر حتى يتم مسحها صراحة من قبل المستخدم أو التطبيق، على عكس تخزين الجلسة."
+  },
+  {
+    "id": 24,
+    "type": "multiple_choice",
+    "question_en": "What is the correct way to include an external CSS file in HTML?",
+    "question_ar": "ما هي الطريقة الصحيحة لتضمين ملف CSS خارجي في HTML؟",
+    "options_en": ["<style src='style.css'>", "<css href='style.css'>", "<link rel='stylesheet' href='style.css'>", "<import css='style.css'>"],
+    "options_ar": ["<style src='style.css'>", "<css href='style.css'>", "<link rel='stylesheet' href='style.css'>", "<import css='style.css'>"],
+    "correct_answer": 2,
+    "explanation_en": "The <link> element with rel='stylesheet' is the correct way to include external CSS files.",
+    "explanation_ar": "عنصر <link> مع rel='stylesheet' هو الطريقة الصحيحة لتضمين ملفات CSS الخارجية."
+  },
+  {
+    "id": 25,
+    "type": "true_false",
+    "question_en": "Arrow functions in JavaScript have their own 'this' context.",
+    "question_ar": "الدوال السهمية في JavaScript لها سياق 'this' خاص بها.",
+    "correct_answer": false,
+    "explanation_en": "Arrow functions do not have their own 'this' context; they inherit it from the enclosing scope.",
+    "explanation_ar": "الدوال السهمية لا تملك سياق 'this' خاص بها؛ ترث من النطاق المحيط."
+  },
+  {
+    "id": 26,
+    "type": "multiple_choice",
+    "question_en": "Which HTML attribute is used to specify alternative text for images?",
+    "question_ar": "أي خاصية HTML تُستخدم لتحديد النص البديل للصور؟",
+    "options_en": ["title", "alt", "description", "text"],
+    "options_ar": ["title", "alt", "description", "text"],
+    "correct_answer": 1,
+    "explanation_en": "The 'alt' attribute provides alternative text for images, important for accessibility and SEO.",
+    "explanation_ar": "خاصية 'alt' توفر نصاً بديلاً للصور، مهمة لإمكانية الوصول وتحسين محركات البحث."
+  },
+  {
+    "id": 27,
+    "type": "true_false",
+    "question_en": "CSS Flexbox can automatically distribute space between items.",
+    "question_ar": "CSS Flexbox يمكنه توزيع المساحة تلقائياً بين العناصر.",
+    "correct_answer": true,
+    "explanation_en": "Flexbox provides properties like justify-content and align-items to automatically distribute space.",
+    "explanation_ar": "Flexbox يوفر خصائص مثل justify-content و align-items لتوزيع المساحة تلقائياً."
+  },
+  {
+    "id": 28,
+    "type": "multiple_choice",
+    "question_en": "What does JSX stand for?",
+    "question_ar": "ماذا يعني JSX؟",
+    "options_en": ["JavaScript XML", "Java Syntax Extension", "JSON XML", "JavaScript Extension"],
+    "options_ar": ["JavaScript XML", "امتداد صيغة Java", "JSON XML", "امتداد JavaScript"],
+    "correct_answer": 0,
+    "explanation_en": "JSX stands for JavaScript XML, a syntax extension for JavaScript used in React.",
+    "explanation_ar": "JSX يعني JavaScript XML، امتداد صيغة لـ JavaScript يُستخدم في React."
+  },
+  {
+    "id": 29,
+    "type": "true_false",
+    "question_en": "The 'position: sticky' CSS property is supported in all modern browsers.",
+    "question_ar": "خاصية CSS 'position: sticky' مدعومة في جميع المتصفحات الحديثة.",
+    "correct_answer": true,
+    "explanation_en": "position: sticky is now supported in all modern browsers including Chrome, Firefox, Safari, and Edge.",
+    "explanation_ar": "position: sticky مدعومة الآن في جميع المتصفحات الحديثة بما في ذلك Chrome وFirefox وSafari وEdge."
+  },
+  {
+    "id": 30,
+    "type": "multiple_choice",
+    "question_en": "Which React hook is used for side effects?",
+    "question_ar": "أي React hook يُستخدم للتأثيرات الجانبية؟",
+    "options_en": ["useState", "useEffect", "useContext", "useMemo"],
+    "options_ar": ["useState", "useEffect", "useContext", "useMemo"],
+    "correct_answer": 1,
+    "explanation_en": "useEffect is used for side effects like data fetching, subscriptions, or manually changing the DOM.",
+    "explanation_ar": "useEffect يُستخدم للتأثيرات الجانبية مثل جلب البيانات أو الاشتراكات أو تغيير DOM يدوياً."
+  },
+  {
+    "id": 31,
+    "type": "true_false",
+    "question_en": "CSS Grid and Flexbox serve the same purpose and are interchangeable.",
+    "question_ar": "CSS Grid وFlexbox يخدمان نفس الغرض وقابلان للتبديل.",
+    "correct_answer": false,
+    "explanation_en": "While both are layout systems, Grid is better for 2D layouts and Flexbox excels at 1D layouts.",
+    "explanation_ar": "بينما كلاهما أنظمة تخطيط، Grid أفضل للتخطيطات ثنائية الأبعاد وFlexbox يتفوق في التخطيطات أحادية البعد."
+  },
+  {
+    "id": 32,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of the 'defer' attribute in script tags?",
+    "question_ar": "ما هو الغرض من خاصية 'defer' في علامات script؟",
+    "options_en": ["Execute immediately", "Execute after DOM is parsed", "Execute asynchronously", "Prevent execution"],
+    "options_ar": ["تنفيذ فوري", "تنفيذ بعد تحليل DOM", "تنفيذ غير متزامن", "منع التنفيذ"],
+    "correct_answer": 1,
+    "explanation_en": "The 'defer' attribute delays script execution until after the HTML document has been completely parsed.",
+    "explanation_ar": "خاصية 'defer' تؤخر تنفيذ السكريبت حتى بعد تحليل وثيقة HTML بالكامل."
+  },
+  {
+    "id": 33,
+    "type": "true_false",
+    "question_en": "React state updates are always synchronous.",
+    "question_ar": "تحديثات حالة React دائماً متزامنة.",
+    "correct_answer": false,
+    "explanation_en": "React state updates are asynchronous and may be batched for performance optimization.",
+    "explanation_ar": "تحديثات حالة React غير متزامنة وقد يتم تجميعها لتحسين الأداء."
+  },
+  {
+    "id": 34,
+    "type": "multiple_choice",
+    "question_en": "Which CSS property is used to create rounded corners?",
+    "question_ar": "أي خاصية CSS تُستخدم لإنشاء زوايا مدورة؟",
+    "options_en": ["corner-radius", "border-radius", "border-corner", "radius"],
+    "options_ar": ["corner-radius", "border-radius", "border-corner", "radius"],
+    "correct_answer": 1,
+    "explanation_en": "border-radius is the CSS property used to create rounded corners on elements.",
+    "explanation_ar": "border-radius هي خاصية CSS المستخدمة لإنشاء زوايا مدورة على العناصر."
+  },
+  {
+    "id": 35,
+    "type": "true_false",
+    "question_en": "The 'const' keyword in JavaScript prevents any changes to the variable.",
+    "question_ar": "الكلمة المفتاحية 'const' في JavaScript تمنع أي تغييرات على المتغير.",
+    "correct_answer": false,
+    "explanation_en": "const prevents reassignment but allows mutation of objects and arrays.",
+    "explanation_ar": "const تمنع إعادة التعيين لكن تسمح بتغيير الكائنات والمصفوفات."
+  },
+  {
+    "id": 36,
+    "type": "multiple_choice",
+    "question_en": "What is the correct syntax for a CSS media query?",
+    "question_ar": "ما هي الصيغة الصحيحة لاستعلام وسائط CSS؟",
+    "options_en": ["@media (max-width: 768px)", "@query (max-width: 768px)", "@screen (max-width: 768px)", "@responsive (max-width: 768px)"],
+    "options_ar": ["@media (max-width: 768px)", "@query (max-width: 768px)", "@screen (max-width: 768px)", "@responsive (max-width: 768px)"],
+    "correct_answer": 0,
+    "explanation_en": "@media is the correct at-rule for defining media queries in CSS.",
+    "explanation_ar": "@media هي القاعدة الصحيحة لتعريف استعلامات الوسائط في CSS."
+  },
+  {
+    "id": 37,
+    "type": "true_false",
+    "question_en": "Event bubbling in JavaScript means events propagate from child to parent elements.",
+    "question_ar": "فقاعة الأحداث في JavaScript تعني أن الأحداث تنتشر من العناصر الفرعية إلى الأبوية.",
+    "correct_answer": true,
+    "explanation_en": "Event bubbling is the default behavior where events bubble up from the target element to its ancestors.",
+    "explanation_ar": "فقاعة الأحداث هي السلوك الافتراضي حيث تنتشر الأحداث من العنصر المستهدف إلى أسلافه."
+  },
+  {
+    "id": 38,
+    "type": "multiple_choice",
+    "question_en": "Which CSS display value removes an element from the document flow?",
+    "question_ar": "أي قيمة عرض CSS تزيل عنصراً من تدفق الوثيقة؟",
+    "options_en": ["display: hidden", "display: none", "display: invisible", "display: remove"],
+    "options_ar": ["display: hidden", "display: none", "display: invisible", "display: remove"],
+    "correct_answer": 1,
+    "explanation_en": "display: none completely removes the element from the document flow and renders it invisible.",
+    "explanation_ar": "display: none يزيل العنصر تماماً من تدفق الوثيقة ويجعله غير مرئي."
+  },
+  {
+    "id": 39,
+    "type": "true_false",
+    "question_en": "Webpack can only bundle JavaScript files.",
+    "question_ar": "Webpack يمكنه تجميع ملفات JavaScript فقط.",
+    "correct_answer": false,
+    "explanation_en": "Webpack can bundle various file types including CSS, images, fonts, and more through loaders.",
+    "explanation_ar": "Webpack يمكنه تجميع أنواع ملفات مختلفة بما في ذلك CSS والصور والخطوط وأكثر من خلال المحملات."
+  },
+  {
+    "id": 40,
+    "type": "multiple_choice",
+    "question_en": "Which JavaScript operator is used for strict equality comparison?",
+    "question_ar": "أي عامل JavaScript يُستخدم للمقارنة الصارمة للمساواة؟",
+    "options_en": ["==", "===", "!=", "!=="],
+    "options_ar": ["==", "===", "!=", "!=="],
+    "correct_answer": 1,
+    "explanation_en": "=== performs strict equality comparison without type coercion.",
+    "explanation_ar": "=== يؤدي مقارنة مساواة صارمة بدون إكراه النوع."
+  },
+  {
+    "id": 41,
+    "type": "true_false",
+    "question_en": "CSS animations are more performant than JavaScript animations.",
+    "question_ar": "رسوم CSS المتحركة أكثر أداءً من رسوم JavaScript المتحركة.",
+    "correct_answer": true,
+    "explanation_en": "CSS animations are typically more performant as they can be optimized by the browser and run on the GPU.",
+    "explanation_ar": "رسوم CSS المتحركة عادة أكثر أداءً لأنها يمكن تحسينها بواسطة المتصفح وتعمل على GPU."
+  },
+  {
+    "id": 42,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of React.memo()?",
+    "question_ar": "ما هو الغرض من React.memo()؟",
+    "options_en": ["Memory management", "Performance optimization", "State management", "Error handling"],
+    "options_ar": ["إدارة الذاكرة", "تحسين الأداء", "إدارة الحالة", "معالجة الأخطاء"],
+    "correct_answer": 1,
+    "explanation_en": "React.memo() is a higher-order component that optimizes performance by preventing unnecessary re-renders.",
+    "explanation_ar": "React.memo() هو مكون عالي المستوى يحسن الأداء بمنع إعادة العرض غير الضرورية."
+  },
+  {
+    "id": 43,
+    "type": "true_false",
+    "question_en": "HTML5 form validation works without JavaScript.",
+    "question_ar": "التحقق من نماذج HTML5 يعمل بدون JavaScript.",
+    "correct_answer": true,
+    "explanation_en": "HTML5 provides built-in form validation attributes like 'required', 'pattern', and input types.",
+    "explanation_ar": "HTML5 يوفر خصائص التحقق المدمجة للنماذج مثل 'required' و 'pattern' وأنواع الإدخال."
+  },
+  {
+    "id": 44,
+    "type": "multiple_choice",
+    "question_en": "Which CSS property is used to control text overflow?",
+    "question_ar": "أي خاصية CSS تُستخدم للتحكم في فيض النص؟",
+    "options_en": ["overflow", "text-overflow", "white-space", "word-wrap"],
+    "options_ar": ["overflow", "text-overflow", "white-space", "word-wrap"],
+    "correct_answer": 1,
+    "explanation_en": "text-overflow property specifies how overflowed content should be signaled to the user.",
+    "explanation_ar": "خاصية text-overflow تحدد كيفية الإشارة للمستخدم عن المحتوى المتدفق."
+  },
+  {
+    "id": 45,
+    "type": "true_false",
+    "question_en": "React hooks can only be used in functional components.",
+    "question_ar": "React hooks يمكن استخدامها فقط في المكونات الوظيفية.",
+    "correct_answer": true,
+    "explanation_en": "React hooks are designed specifically for functional components and cannot be used in class components.",
+    "explanation_ar": "React hooks مصممة خصيصاً للمكونات الوظيفية ولا يمكن استخدامها في مكونات الفئة."
+  },
+  {
+    "id": 46,
+    "type": "multiple_choice",
+    "question_en": "What is the default value of the CSS 'position' property?",
+    "question_ar": "ما هي القيمة الافتراضية لخاصية CSS 'position'؟",
+    "options_en": ["relative", "absolute", "static", "fixed"],
+    "options_ar": ["relative", "absolute", "static", "fixed"],
+    "correct_answer": 2,
+    "explanation_en": "The default value of the position property is 'static', which means normal document flow.",
+    "explanation_ar": "القيمة الافتراضية لخاصية position هي 'static'، مما يعني التدفق العادي للوثيقة."
+  },
+  {
+    "id": 47,
+    "type": "true_false",
+    "question_en": "JavaScript arrays can contain elements of different data types.",
+    "question_ar": "مصفوفات JavaScript يمكن أن تحتوي على عناصر من أنواع بيانات مختلفة.",
+    "correct_answer": true,
+    "explanation_en": "JavaScript arrays are dynamic and can contain elements of any data type in the same array.",
+    "explanation_ar": "مصفوفات JavaScript ديناميكية ويمكن أن تحتوي على عناصر من أي نوع بيانات في نفس المصفوفة."
+  },
+  {
+    "id": 48,
+    "type": "multiple_choice",
+    "question_en": "Which CSS property is used to change text color?",
+    "question_ar": "أي خاصية CSS تُستخدم لتغيير لون النص؟",
+    "options_en": ["text-color", "font-color", "color", "foreground"],
+    "options_ar": ["text-color", "font-color", "color", "foreground"],
+    "correct_answer": 2,
+    "explanation_en": "The 'color' property is used to set the color of text content.",
+    "explanation_ar": "خاصية 'color' تُستخدم لتعيين لون محتوى النص."
+  },
+  {
+    "id": 49,
+    "type": "true_false",
+    "question_en": "React components must start with a capital letter.",
+    "question_ar": "مكونات React يجب أن تبدأ بحرف كبير.",
+    "correct_answer": true,
+    "explanation_en": "React component names must start with a capital letter to distinguish them from regular HTML elements.",
+    "explanation_ar": "أسماء مكونات React يجب أن تبدأ بحرف كبير لتمييزها عن عناصر HTML العادية."
+  },
+  {
+    "id": 50,
+    "type": "multiple_choice",
+    "question_en": "What does CSS stand for?",
+    "question_ar": "ماذا يعني CSS؟",
+    "options_en": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Syntax", "Coded Style System"],
+    "options_ar": ["أوراق أنماط الكمبيوتر", "أوراق الأنماط المتتالية", "صيغة الأنماط الإبداعية", "نظام الأنماط المرمز"],
+    "correct_answer": 1,
+    "explanation_en": "CSS stands for Cascading Style Sheets, used for describing the presentation of HTML documents.",
+    "explanation_ar": "CSS يعني أوراق الأنماط المتتالية، تُستخدم لوصف عرض وثائق HTML."
+  }
+]
