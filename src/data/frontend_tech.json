@@ -19,5 +19,138 @@
     "answer_en": "The Virtual DOM is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM. React uses this concept to optimize rendering performance.\n\nHow it works:\n1. **Virtual representation:** React creates a virtual copy of the DOM in memory\n2. **State changes:** When state changes, React creates a new virtual DOM tree\n3. **Diffing algorithm:** React compares (diffs) the new tree with the previous tree\n4. **Reconciliation:** Only the changed elements are updated in the real DOM\n\nBenefits:\n• **Performance:** Minimizes expensive DOM operations\n• **Predictability:** Declarative updates are easier to reason about\n• **Batching:** Multiple updates can be batched together\n• **Cross-browser:** Abstracts away browser differences",
     "question_ar": "ما هو DOM الافتراضي في React؟",
     "answer_ar": "DOM الافتراضي هو مفهوم برمجي حيث يتم الاحتفاظ بتمثيل افتراضي لواجهة المستخدم في الذاكرة ومزامنته مع DOM الحقيقي. يستخدم React هذا المفهوم لتحسين أداء العرض.\n\nكيف يعمل:\n1. **التمثيل الافتراضي:** React ينشئ نسخة افتراضية من DOM في الذاكرة\n2. **تغييرات الحالة:** عند تغيير الحالة، React ينشئ شجرة DOM افتراضية جديدة\n3. **خوارزمية المقارنة:** React يقارن الشجرة الجديدة مع الشجرة السابقة\n4. **المصالحة:** فقط العناصر المتغيرة يتم تحديثها في DOM الحقيقي\n\nالفوائد:\n• **الأداء:** يقلل من عمليات DOM المكلفة\n• **القابلية للتنبؤ:** التحديثات التقريرية أسهل في الفهم\n• **التجميع:** يمكن تجميع تحديثات متعددة معاً\n• **عبر المتصفحات:** يجرد الاختلافات بين المتصفحات"
+  },
+  {
+    "id": 4,
+    "question_en": "What is hoisting in JavaScript?",
+    "answer_en": "Hoisting is JavaScript's behavior of moving declarations (not initializations) of `var`, `let`, `const` (and function declarations) to the top of their lexical scope during compilation. `var` variables are hoisted and initialized with `undefined`, while `let`/`const` are hoisted but remain in the Temporal Dead Zone until their declaration line.\n\nPractical note: avoid relying on hoisting; declare variables at top of scope or before use.",
+    "question_ar": "ما هو الـ hoisting في جافاسكربت؟",
+    "answer_ar": "الـ hoisting هو سلوك جافاسكربت الذي ينقل إعلان المتغيرات (وليس تهيئتها) وإعلانات الدوال إلى أعلى النطاق أثناء التجميع. متغيرات `var` تُنقَل وتُهيأ بقيمة `undefined`، بينما `let` و`const` تُنقَل لكن تبقى في \"المنطقة الميتة الزمنية\" حتى سطر الإعلان.\n\nملاحظة عملية: تجنب الاعتماد على hoisting وعرّف متغيراتك قبل الاستخدام."
+  },
+  {
+    "id": 5,
+    "question_en": "Explain the difference between function declarations and function expressions.",
+    "answer_en": "Function declarations (e.g. `function foo(){}`) are hoisted fully and can be called before their definition. Function expressions (e.g. `const foo = function(){}` or arrow functions) are not callable before their assignment because only the variable binding is hoisted (depending on var/let/const behavior).\n\nUse expressions for closures and passing functions as values; use declarations for named functions when appropriate.",
+    "question_ar": "ما الفرق بين إعلانات الدوال (function declarations) وتعبيرات الدوال (function expressions)؟",
+    "answer_ar": "إعلانات الدوال (مثل `function foo(){}`) تُنقَل بالكامل (hoisted) ويمكن استدعاؤها قبل تعريفها. تعبيرات الدوال (مثل `const foo = function(){}` أو الـ arrow functions) لا يمكن استدعاؤها قبل التخصيص لأن مجرد ربط المتغير يُنقَل فقط.\n\nاستخدم التعبيرات عندما تحتاج إغلاقًا أو تمرير دوال كقيم؛ واستخدم الإعلانات للدوال المسماة عند الحاجة."
+  },
+  {
+    "id": 6,
+    "question_en": "What is the difference between `==` and `===` in JavaScript?",
+    "answer_en": "`==` performs abstract equality with type coercion (it converts types before comparing). `===` is strict equality and checks both type and value without coercion. Prefer `===` to avoid surprising coercions.",
+    "question_ar": "ما الفرق بين `==` و `===` في جافاسكربت؟",
+    "answer_ar": "`==` يجري مقارنة مع تحويل الأنواع (type coercion). `===` يجري مقارنة صارمة تتحقق من النوع والقيمة دون تحويل. من الأفضل استخدام `===` لتجنّب نتائج التحويل المفاجئة."
+  },
+  {
+    "id": 7,
+    "question_en": "Explain `this` in JavaScript — how its value is determined.",
+    "answer_en": "`this` is determined by call-site:\n• Default (non-strict): global object; strict: `undefined`.\n• As a method: object before dot is `this`.\n• As a constructor (`new`): `this` is the new instance.\n• `call`/`apply`/`bind` explicitly set `this`.\n• Arrow functions: `this` is lexically inherited from the surrounding scope (cannot be rebound).\n\nUnderstanding `this` is critical when writing methods and using callbacks.",
+    "question_ar": "اشرح `this` في جافاسكربت — كيف يتحدد قيمته؟",
+    "answer_ar": "`this` تتحدد حسب مكان الاستدعاء:\n• الافتراضي (غير الصارم): يشير للكائن العالمي؛ في الوضع الصارم يكون `undefined`.\n• عند استدعاء ميثود: الكائن قبل النقطة هو `this`.\n• عند استخدام `new`: `this` هو الكائن الجديد.\n• `call`/`apply`/`bind` يحدّدون `this` صراحةً.\n• الدوال السهمية (arrow) ترث `this` من النطاق المحيط (لا يمكن إعادة ربطها).\n\nفهم `this` ضروري عند كتابة الميثودات واستخدام الاستدعاءات الخلفية."
+  },
+  {
+    "id": 8,
+    "question_en": "What is a closure and give a practical example?",
+    "answer_en": "A closure is a function that retains access to variables from its lexical (outer) scope even after that scope has finished executing. Practical example: a counter factory that keeps private state.\n\nExample:\n```\nfunction makeCounter(){\n  let count = 0;\n  return function(){ return ++count; };\n}\nconst c = makeCounter();\nconsole.log(c()); // 1\n```\nThe inner function closes over `count`.",
+    "question_ar": "ما هو الإغلاق (closure) وأعط مثالًا عمليًا؟",
+    "answer_ar": "الإغلاق هو دالة تحتفظ بالوصول إلى متغيرات النطاق الخارجي حتى بعد انتهاء تنفيذ ذلك النطاق. مثال عملي: مصنع عداد يحتفظ بحالة خاصة.\n\nمثال:\n```\nfunction makeCounter(){\n  let count = 0;\n  return function(){ return ++count; };\n}\n```\nالدالة الداخلية تحتفظ بالوصول إلى `count`."
+  },
+  {
+    "id": 9,
+    "question_en": "Explain the JavaScript event loop, macrotasks and microtasks briefly.",
+    "answer_en": "The event loop schedules work: the call stack runs synchronous code; asynchronous callbacks are queued. Microtasks (Promises, MutationObserver) run after the current task finishes and before the next macrotask. Macrotasks include setTimeout, setInterval, and I/O callbacks. This ordering affects when promise callbacks and timers run.",
+    "question_ar": "اشرح حلقة الأحداث في جافاسكربت، وما الفرق بين macrotasks و microtasks (مختصر).",
+    "answer_ar": "حلقة الأحداث تدير تنفيذ الكود: المكدس ينفّذ الكود المتزامن؛ تُؤخَز الاستدعاءات غير المتزامنة في قوائم. الميكروتاكسكات (Promises، MutationObserver) تُنفَّذ بعد انتهاء المهمة الحالية وقبل الماكروتاكسكات التالية. الماكروتاكسكات تشمل setTimeout وsetInterval وعمليات الإدخال/الإخراج. هذا الترتيب يحدد متى تُنفَّذ ردود الوعود والـ timers."
+  },
+  {
+    "id": 10,
+    "question_en": "What are Promises and how does `async/await` relate to them?",
+    "answer_en": "Promises represent eventual completion or failure of async operations. `async/await` is syntactic sugar over Promises that allows writing asynchronous code in a synchronous-looking manner: `await` pauses until a Promise resolves; `async` makes a function return a Promise.\n\nAlways handle errors with `try/catch` or `.catch()`.",
+    "question_ar": "ما هي الوعود (Promises) وكيف يرتبط `async/await` بها؟",
+    "answer_ar": "الوعود تمثّل إكمالًا مستقبليًا لعملية غير متزامنة أو فشلها. `async/await` هو بنية نحوية مبسطة للوعود تسمح بكتابة كود غير متزامن بشكل يشبه المتزامن: `await` ينتظر حتى تتحقّق Promise، و`async` تجعل الدالة ترجع Promise.\n\nتعامل دائمًا مع الأخطاء بـ `try/catch` أو `.catch()`."
+  },
+  {
+    "id": 11,
+    "question_en": "Explain prototypal inheritance in JavaScript.",
+    "answer_en": "JavaScript objects inherit properties from their prototype (an internal link `[[Prototype]]`). When accessing a property, the engine looks on the object then up the prototype chain. Functions have a `prototype` property used when creating objects via `new`. ES6 `class` is syntactic sugar over prototypes.",
+    "question_ar": "اشرح الوراثة بالنماذج (prototypal inheritance) في جافاسكربت.",
+    "answer_ar": "كائنات جافاسكربت ترث الخصائص من النموذج (prototype) عبر رابط داخلي `[[Prototype]]`. عند الوصول لخاصية، يبحث المحرك في الكائن ثم يصعد سلسلة النماذج. الدوال تملك خاصية `prototype` تُستخدم عند إنشاء كائنات بواسطة `new`. `class` في ES6 هي تغليف نحوي فوق النماذج."
+  },
+  {
+    "id": 12,
+    "question_en": "What are modules in JavaScript (ES modules) and why use them?",
+    "answer_en": "ES modules (`import`/`export`) provide file-level scope, static analysis for bundlers (helping tree-shaking), and better dependency management. Use modules to split code, reuse logic, and allow tools to optimize builds.",
+    "question_ar": "ما هي الوحدات (modules) في جافاسكربت ولماذا تُستخدم؟",
+    "answer_ar": "وحدات ES (`import`/`export`) توفّر نطاقًا على مستوى الملف، وتمكن التحليل الثابت لأدوات التجميع (مفيدة للـ tree-shaking)، وتحسّن إدارة التبعيات. استخدم الوحدات لتقسيم الكود وإعادة استخدام المنطق وتمكين أدوات البناء من التحسين."
+  },
+  {
+    "id": 13,
+    "question_en": "React: What are Hooks and why were they introduced?",
+    "answer_en": "Hooks are functions that let functional components use state and lifecycle features (`useState`, `useEffect`, etc.). Introduced to avoid patterns like HOCs and render props for reuse of stateful logic, and to make code more reusable and simpler to reason about.",
+    "question_ar": "React: ما هي الـ Hooks ولماذا أُدخلت؟",
+    "answer_ar": "الـ Hooks هي دوال تسمح للمكونات الوظيفية باستخدام الحالة وميزات دورة الحياة (`useState`، `useEffect`، إلخ). أُدخلت لتجنّب تعقيدات أنماط مثل HOCs وrender props في إعادة استخدام المنطق ذو الحالة، ولجعل الكود أسهل في الفهم وإعادة الاستخدام."
+  },
+  {
+    "id": 14,
+    "question_en": "React: How does `useEffect` differ from lifecycle methods in class components?",
+    "answer_en": "`useEffect` unifies lifecycle behavior: the effect callback runs after rendering; you can return a cleanup function to run before next effect/unmount. It replaces `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` depending on dependencies array. Dependency array controls when the effect runs.",
+    "question_ar": "React: كيف يختلف `useEffect` عن دوال دورة الحياة في مكونات الـ class؟",
+    "answer_ar": "`useEffect` يجمع سلوك دورة الحياة: تُنفّذ دالة التأثير بعد العرض؛ ويمكنها إرجاع دالة تنظيف تُشغّل قبل التأثير التالي أو عند إلغاء التركيب. يحل محل `componentDidMount`، `componentDidUpdate`، و`componentWillUnmount` حسب مصفوفة الاعتماديات. تتحكم مصفوفة الاعتماديات في توقيت التنفيذ."
+  },
+  {
+    "id": 15,
+    "question_en": "React: What is reconciliation and how do keys help?",
+    "answer_en": "Reconciliation is React's process for updating the DOM by comparing old and new virtual DOM trees. Keys help React identify which items in a list have changed, been added, or removed — providing stable identity between renders and avoiding unnecessary re-renders or incorrect DOM updates.",
+    "question_ar": "React: ما هي عملية الـ reconciliation وكيف تساعد المفاتيح (keys)؟",
+    "answer_ar": "المصالحة (reconciliation) هي عملية React لتحديث DOM عبر مقارنة شجرتي DOM الافتراضي القديم والجديد. تساعد المفاتيح React على تمييز أي عناصر في قائمة تغيّرت أو أضيفت أو حُذفت — مما يوفر هوية ثابتة بين العروض ويمنع تحديثات DOM غير ضرورية."
+  },
+  {
+    "id": 16,
+    "question_en": "React: When to use `useMemo` and `useCallback`?",
+    "answer_en": "`useMemo` memoizes a computed value to avoid expensive recalculation; `useCallback` memoizes a function reference to avoid re-creating functions (useful when passing callbacks to memoized children). Use them only when you have measurable performance issues, since they add complexity and some overhead.",
+    "question_ar": "React: متى تستخدم `useMemo` و `useCallback`؟",
+    "answer_ar": "`useMemo` يخزّن قيمة محسوبة لتجنب إعادة حساب مكلفة؛ `useCallback` يخزّن مرجع الدالة لتجنب إنشاء دوال جديدة (مفيد عند تمرير معالجات لمكوّنات مُحفوظة). استخدمهما فقط عند وجود مشاكل أداء قابلة للقياس لأنهما يضيفان تعقيدًا وبعض الحمل."
+  },
+  {
+    "id": 17,
+    "question_en": "React: What are refs and when should you use them?",
+    "answer_en": "Refs (`useRef` or `createRef`) provide an escape hatch to access DOM nodes or persist mutable values across renders without causing re-renders. Use refs for focusing inputs, integrating non-React libraries, or storing mutable values (timers). Avoid using refs to manage UI state that belongs in React state.",
+    "question_ar": "React: ما هي الـ refs ومتى تستخدمها؟",
+    "answer_ar": "الـ refs (`useRef` أو `createRef`) تتيح الوصول لعقد DOM أو الاحتفاظ بقيم قابلة للتغيير عبر العروض دون إشعال إعادة رسم. استعملها للتركيز على حقول الإدخال، تكامل مكتبات غير React، أو حفظ مؤقتات. تجنّب استخدامها لإدارة حالة واجهة ينبغي أن تكون في React state."
+  },
+  {
+    "id": 18,
+    "question_en": "React: What is Context and what are its trade-offs?",
+    "answer_en": "Context provides a way to pass data through the component tree without prop-drilling. Trade-offs: updating context value triggers re-renders of consuming components; large contexts can hurt performance. Mitigation: split contexts, memoize values, or use selectors.",
+    "question_ar": "React: ما هو الـ Context وما هي مقايضاته؟",
+    "answer_ar": "الـ Context يوفّر وسيلة لتمرير البيانات عبر شجرة المكونات دون تمرير props بشكل متعاقب. المقايضات: تغيير قيمة السياق يسبب إعادة رسم لمكونات المستهلكين؛ والسياقات الكبيرة قد تضر بالأداء. الحلول: تقسيم السياق، تذكّر (memoize) القيم، أو استخدام مختارات (selectors)."
+  },
+  {
+    "id": 19,
+    "question_en": "React: How do Suspense and lazy loading work for code-splitting?",
+    "answer_en": "`React.lazy()` lets you dynamically import a component; `Suspense` shows a fallback while the lazy component loads. Together they enable route- or component-level code-splitting so that bundles are loaded only when needed, improving initial load time.",
+    "question_ar": "React: كيف يعمل Suspense والتحميل الكسول (lazy) لتقطيع الكود؟",
+    "answer_ar": "`React.lazy()` يتيح استيراد مكوّن ديناميكيًا؛ و`Suspense` يعرض بديلًا أثناء تحميل المكوّن الكسول. معًا يمكّنان تقطيع الكود على مستوى المسارات أو المكوّنات بحيث تُحمّل الحزم عند الطلب، مما يحسّن زمن التحميل الأولي."
+  },
+  {
+    "id": 20,
+    "question_en": "How to optimize rendering performance in React?",
+    "answer_en": "Strategies:\n• Avoid unnecessary re-renders (React.memo, useMemo, useCallback)\n• Keep component tree shallow and split large components\n• Use keys correctly for lists\n• Code-split with lazy/Suspense\n• Minimize work on main thread (avoid heavy computations in render)\n• Use profiler to find performance hotspots",
+    "question_ar": "كيف تحسّن أداء العرض في React؟",
+    "answer_ar": "الاستراتيجيات:\n• تجنّب إعادة الرسم غير الضرورية (React.memo، useMemo، useCallback)\n• اجعل شجرة المكونات قصيرة وقسّم المكونات الكبيرة\n• استخدم المفاتيح بشكل صحيح للقوائم\n• قطّع الكود باستخدام lazy/Suspense\n• قلّل العمل على الخيط الرئيسي (تجنّب الحسابات الثقيلة في render)\n• استخدم الـ profiler لإيجاد نقاط الاختناق"
+  },
+  {
+    "id": 21,
+    "question_en": "HTML/CSS: Why use semantic HTML and name a few tags for structure?",
+    "answer_en": "Semantic HTML improves accessibility and SEO and makes markup easier to maintain. Structural tags include `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` — they give meaning to content beyond generic `<div>`s.",
+    "question_ar": "HTML/CSS: لماذا نستخدم HTML دلالي واذكر بعض الوسوم الهيكلية؟",
+    "answer_ar": "الـ HTML الدلالي يحسّن الوصولية وSEO ويجعل الترميز أسهل للصيانة. من الوسوم الهيكلية: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` — تعطي معنى للمحتوى بدلًا من `<div>` العامة."
+  },
+  {
+    "id": 22,
+    "question_en": "CSS: When to use Flexbox vs Grid?",
+    "answer_en": "Use Flexbox for one-dimensional layouts (single row/column) and fine-grained alignment of items. Use Grid for two-dimensional layouts (rows + columns) like page layouts or complex components. Often they are combined: Grid for overall layout, Flexbox for internal alignment.",
+    "question_ar": "CSS: متى تستخدم Flexbox مقابل Grid؟",
+    "answer_ar": "استخدم Flexbox للتخطيطات أحادية البعد (صف أو عمود) وللمحاذاة الدقيقة للعناصر. استخدم Grid للتخطيطات ثنائية البعد (صفوف وأعمدة) مثل تخطيطات الصفحة والمكوّنات المعقدة. غالبًا يُدمجان: Grid للتخطيط العام وFlexbox لمحاذاة داخلية."
   }
 ]

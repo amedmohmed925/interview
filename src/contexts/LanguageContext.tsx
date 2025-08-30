@@ -51,6 +51,35 @@ const translations = {
     'common.loading': 'Loading...',
     'common.error': 'Error loading questions',
     'common.back': 'Back to Home',
+    'common.examples': 'Examples',
+    'common.input': 'Input',
+    'common.expected_output': 'Expected Output',
+    'common.show_solution': 'Show Solution',
+    'common.hide_solution': 'Hide Solution',
+    
+    // Algorithms page
+    'algorithms.title': 'Algorithms & Data Structures',
+    'algorithms.questions': 'Questions',
+    'algorithms.intro': 'Essential algorithms and data structures concepts, interview questions, and practical examples.',
+    
+    // JavaScript Interpreter
+    'js.title': 'JavaScript Interpreter',
+    'js.subtitle': 'Write and run JavaScript code with live output',
+    'js.editor': 'Code Editor',
+    'js.output': 'Output',
+    'js.examples': 'Ready Examples',
+    'js.tips': 'Tips',
+    'js.run': 'Run Code',
+    'js.running': 'Running...',
+    'js.clear': 'Clear',
+    'js.copy': 'Copy',
+    'js.download': 'Download',
+    'js.basic_ops': 'Basic Operations',
+    'js.functions': 'Functions',
+    'js.objects_arrays': 'Objects & Arrays',
+    
+    // Home page additional
+    'home.start_learning': 'Start Learning',
   },
   ar: {
     // Navigation
@@ -88,6 +117,35 @@ const translations = {
     'common.loading': 'جاري التحميل...',
     'common.error': 'خطأ في تحميل الأسئلة',
     'common.back': 'العودة للرئيسية',
+    'common.examples': 'الأمثلة',
+    'common.input': 'المدخل',
+    'common.expected_output': 'المخرج المتوقع',
+    'common.show_solution': 'إظهار الحل',
+    'common.hide_solution': 'إخفاء الحل',
+    
+    // Algorithms page
+    'algorithms.title': 'الخوارزميات وهياكل البيانات',
+    'algorithms.questions': 'سؤال',
+    'algorithms.intro': 'مفاهيم الخوارزميات وهياكل البيانات الأساسية، أسئلة المقابلات، والأمثلة العملية.',
+    
+    // JavaScript Interpreter
+    'js.title': 'مترجم JavaScript',
+    'js.subtitle': 'اكتب وشغل كود JavaScript الخاص بك مع مخرجات مباشرة',
+    'js.editor': 'محرر الكود',
+    'js.output': 'المخرجات',
+    'js.examples': 'أمثلة جاهزة',
+    'js.tips': 'نصائح',
+    'js.run': 'تشغيل الكود',
+    'js.running': 'جاري التشغيل...',
+    'js.clear': 'مسح',
+    'js.copy': 'نسخ',
+    'js.download': 'تحميل',
+    'js.basic_ops': 'العمليات الأساسية',
+    'js.functions': 'الدوال',
+    'js.objects_arrays': 'الكائنات والمصفوفات',
+    
+    // Home page additional
+    'home.start_learning': 'ابدأ التعلم',
   },
 };
 
@@ -122,7 +180,7 @@ export function LanguageProvider({
   }, [language]);
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    return (translations[language] as Record<string, string>)[key] || key;
   };
 
   const value = {

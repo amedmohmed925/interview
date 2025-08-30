@@ -17,7 +17,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
   const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -62,21 +62,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       href: '/backend-exam',
       key: 'backend-exam' 
     },
+    {
+      name: t('algorithms.title') || 'Algorithms & Data Structures',
+      href: '/algorithms-data-structures',
+      key: 'algorithms-data-structures'
+    },
+    {
+      name: t('js.title') || 'JavaScript Interpreter',
+      href: '/javascript-interpreter',
+      key: 'javascript-interpreter'
+    },
   ];
 
   const isActive = (href: string) => location.pathname === href;
-
-  const pageVariants = {
-    initial: { opacity: 0, x: 20, scale: 0.98 },
-    animate: { opacity: 1, x: 0, scale: 1 },
-    exit: { opacity: 0, x: -20, scale: 0.98 }
-  };
-
-  const pageTransition = {
-    type: 'tween',
-    ease: 'anticipate',
-    duration: 0.4
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -238,35 +236,31 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       {/* Main Content */}
       <main className="flex-1">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={location.pathname}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            variants={pageVariants}
-            transition={pageTransition}
-          >
-            {children}
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          {children}
+        </motion.div>
       </main>
 
       {/* Footer */}
       <footer className="border-t bg-background">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 Interview Q&A Platform. Built with React 19 + Vite.</p>
-            <a
+            <p>© 2025 Interview Q&A Platform. <a
                         href="https://www.linkedin.com/in/ahmed-mohmed-707603256"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary underline hover:text-primary/80"
                       >
-                        Ahmed Mohamed
+                        Ahmed Mohamed <br />
                       </a>
                       . Built for developers and programmers preparing for interviews.
-                    
+                    </p>
+            
           </div>
         </div>
       </footer>

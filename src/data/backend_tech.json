@@ -12,5 +12,145 @@
     "answer_en": "SQL and NoSQL are two different approaches to database management, each with distinct characteristics and use cases.\n\n**SQL (Relational) Databases:**\n• **Structure:** Table-based with rows and columns\n• **Schema:** Fixed schema, data must conform to predefined structure\n• **ACID properties:** Atomicity, Consistency, Isolation, Durability\n• **Relationships:** Support complex joins and relationships\n• **Examples:** MySQL, PostgreSQL, SQL Server, Oracle\n\n**NoSQL (Non-relational) Databases:**\n• **Structure:** Document, key-value, column-family, or graph\n• **Schema:** Flexible or schema-less design\n• **Scalability:** Designed for horizontal scaling\n• **Performance:** Optimized for specific use cases\n• **Examples:** MongoDB, Cassandra, Redis, Neo4j\n\n**When to use SQL:**\n• Complex queries and reporting\n• Strong consistency requirements\n• Well-defined schema\n\n**When to use NoSQL:**\n• Rapid development and iteration\n• Large-scale applications\n• Flexible data models",
     "question_ar": "ما الفرق بين قواعد بيانات SQL وNoSQL؟",
     "answer_ar": "SQL وNoSQL هما نهجان مختلفان لإدارة قواعد البيانات، كل منهما له خصائص وحالات استخدام مميزة.\n\n**قواعد بيانات SQL (العلائقية):**\n• **الهيكل:** قائم على الجداول مع صفوف وأعمدة\n• **المخطط:** مخطط ثابت، البيانات يجب أن تتوافق مع هيكل محدد مسبقاً\n• **خصائص ACID:** الذرية، الاتساق، العزل، الديمومة\n• **العلاقات:** تدعم الربط المعقد والعلاقات\n• **أمثلة:** MySQL، PostgreSQL، SQL Server، Oracle\n\n**قواعد بيانات NoSQL (غير العلائقية):**\n• **الهيكل:** وثيقة، مفتاح-قيمة، عائلة أعمدة، أو رسم بياني\n• **المخطط:** تصميم مرن أو بدون مخطط\n• **قابلية التوسع:** مصممة للتوسع الأفقي\n• **الأداء:** محسّنة لحالات استخدام محددة\n• **أمثلة:** MongoDB، Cassandra، Redis، Neo4j\n\n**متى تستخدم SQL:**\n• الاستعلامات المعقدة والتقارير\n• متطلبات الاتساق القوية\n• مخطط محدد جيداً\n\n**متى تستخدم NoSQL:**\n• التطوير والتكرار السريع\n• التطبيقات واسعة النطاق\n• نماذج بيانات مرنة"
+  },
+   {
+    "id": 3,
+    "question_en": "Explain Node.js event loop and libuv at a high level.",
+    "answer_en": "The Node.js event loop is the mechanism that processes asynchronous callbacks and coordinates non-blocking I/O. libuv is the underlying C library that provides the event loop, thread pool (for file system and some crypto operations), and cross-platform asynchronous I/O. The event loop runs phases (timers, pending callbacks, poll, check, close) and processes queues of callbacks; heavy synchronous work blocks the loop and freezes the application.",
+    "question_ar": "اشرح حلقة أحداث Node.js وlibuv بشكل عام.",
+    "answer_ar": "حلقة أحداث Node.js هي الآلية التي تعالج الاستدعاءات غير المتزامنة وتنسّق عمليات I/O غير المحجوبة. libuv هي مكتبة C تحتية توفر حلقة الأحداث، ومجموعة خيوط (thread pool) لعمليات مثل نظام الملفات وبعض عمليات التشفير، وواجهة I/O غير متزامنة عبر أنظمة التشغيل. تمر حلقة الأحداث بمراحل (timers، pending callbacks، poll، check، close) وتُعالِج قوائم الاستدعاءات؛ وأي عمل متزامن ثقيل يعيق الحلقة ويجمد التطبيق."
+  },
+  {
+    "id": 4,
+    "question_en": "What is the difference between process.nextTick, Promises (microtasks), setImmediate and setTimeout?",
+    "answer_en": "Order/priority in Node: `process.nextTick()` callbacks are executed immediately after the current operation, before Promise microtasks and before the event loop continues. Promise `.then` handlers (microtasks) run after nextTick queue but before the next event-loop macrotask. `setImmediate()` callbacks are invoked in the 'check' phase of the event loop (after I/O poll). `setTimeout(fn, 0)` schedules a timer in the timers phase — actual ordering with setImmediate can vary depending on I/O. Use each according to timing needs.",
+    "question_ar": "ما الفرق بين process.nextTick وPromises (microtasks) وsetImmediate وsetTimeout؟",
+    "answer_ar": "الأولوية في Node: دوال `process.nextTick()` تُنفّذ فور انتهاء العملية الحالية، قبل ميكروتاكسكات الوعود (Promises) وقبل استمرار حلقة الأحداث. معالجات `.then` للوعود (الميكروتاكسكات) تُنفّذ بعد طابور nextTick وقبل المهمة الكبرى التالية للحلقة. `setImmediate()` تُنفّذ في مرحلة 'check' من حلقة الأحداث (بعد poll/I/O). `setTimeout(fn,0)` يوضَع في مرحلة timers — وترتيب التنفيذ بين setImmediate وsetTimeout قد يتغيّر حسب سياق I/O. استخدم كل واحد بناءً على توقيت التنفيذ المطلوب."
+  },
+  {
+    "id": 5,
+    "question_en": "Explain Node.js streams and backpressure.",
+    "answer_en": "Streams are abstractions for handling streaming data: Readable, Writable, Duplex, and Transform. They allow processing large data in chunks without loading everything into memory. Backpressure is a mechanism where a fast producer slows down to match a slower consumer (e.g., writable stream signals `write()` returned false), and the producer should pause and resume based on 'drain' events to avoid memory bloat.",
+    "question_ar": "اشرح Streams في Node.js ومفهوم backpressure.",
+    "answer_ar": "الـ Streams هي تجريدات للتعامل مع البيانات المتدفقة: Readable، Writable، Duplex، وTransform. تتيح معالجة بيانات كبيرة على دفعات دون تحميل كل شيء في الذاكرة. الـ backpressure هو آلية تجعل المُنتِج السريع يبطئ ليناسب المستهلك الأبطأ (مثل أن `write()` يعيد false على stream قابل للكتابة)، ويجب على المُنتِج التوقّف مؤقتًا ثم الاستئناف عند حدث 'drain' لتجنّب زيادة الذاكرة."
+  },
+  {
+    "id": 6,
+    "question_en": "What are Buffers in Node.js and when to use them?",
+    "answer_en": "Buffers are Node.js objects for handling binary data (fixed-length raw memory). Use them when working with binary streams, file I/O, network protocols, or when converting between encodings. Buffers are more efficient than strings for binary operations and provide methods for reading/writing integers, slices, and encoding transformations.",
+    "question_ar": "ما هي Buffers في Node.js ومتى تستخدمها؟",
+    "answer_ar": "الـ Buffers هي كائنات في Node.js للتعامل مع البيانات الثنائية (ذاكرة خام بطول ثابت). تُستخدم عند التعامل مع تدفقات ثنائية، عمليات ملفات، بروتوكولات الشبكة، أو عند التحويل بين ترميزات. الـ Buffers أكثر كفاءة من النصوص في العمليات الثنائية وتوفّر طرقًا لقراءة/كتابة أعداد صحيحة، تقطيع، وتحويل الترميز."
+  },
+  {
+    "id": 7,
+    "question_en": "Describe the differences between the Cluster module and Worker Threads.",
+    "answer_en": "Cluster module forks multiple Node processes (master + workers) to take advantage of multiple CPU cores; each process has its own event loop and memory. Worker Threads create threads within the same process, allowing shared memory via `SharedArrayBuffer` and `worker.postMessage`. Use clustering for multi-process isolation and resilience; use worker threads for CPU-bound tasks without the overhead of IPC between processes.",
+    "question_ar": "ما الفرق بين Cluster module وWorker Threads؟",
+    "answer_ar": "وحدة Cluster تفرّخ عمليات Node متعددة (عملية رئيسية + عمال) للاستفادة من أنوية المعالج؛ كل عملية لها حلقة أحداث وذاكرة مستقلة. Worker Threads تخلق خيوطًا داخل نفس العملية، وتمكن مشاركة الذاكرة عبر `SharedArrayBuffer` و`worker.postMessage`. استخدم clustering للعزل متعدد العمليات والمرونة؛ واستخدم worker threads للمهام الثقيلة CPU دون تكلفة IPC بين العمليات."
+  },
+  {
+    "id": 8,
+    "question_en": "How do you spawn child processes and what are differences between spawn, exec and fork?",
+    "answer_en": "`child_process.spawn()` streams stdio and is suited for long-running processes or large outputs. `exec()` buffers the whole stdout/stderr and is simpler for commands with small output. `fork()` is a specialized spawn for starting new Node processes with an IPC channel for messaging between parent and child (useful for running JS modules as subprocesses). Choose according to memory, streaming, and IPC needs.",
+    "question_ar": "كيف تنشئ child processes وما الفرق بين spawn وexec وfork؟",
+    "answer_ar": "`child_process.spawn()` يتعامل مع stdio كتيار (stream) ومناسب للعمليات الطويلة أو المخرجات الكبيرة. `exec()` يجمع كامل stdout/stderr في ذاكرة مؤقتة ومناسب للأوامر ذات المخرجات الصغيرة. `fork()` هو شكل خاص من spawn لبدء عمليات Node مع قناة IPC للمراسلة بين الأب والابن (مفيد لتشغيل وحدات JS كعمليات فرعية). اختر وفق حاجتك للذاكرة، البث، والاتصال بين العمليات."
+  },
+  {
+    "id": 9,
+    "question_en": "How to debug memory leaks and profile memory in Node.js?",
+    "answer_en": "Detect leaks by monitoring RSS/heap over time and using heap snapshots (Chrome DevTools via `--inspect`) or tools like `clinic`/`heapdump`. Take heap snapshots, compare retained objects, and find detached DOM-like structures or closures holding references. Use the profiler to identify long-lived allocations and fix by removing references or revising caching patterns.",
+    "question_ar": "كيف تصحّح تسريبات الذاكرة وتقوم بعمل ملف تعريف للذاكرة في Node.js؟",
+    "answer_ar": "اكتشف التسريبات بمراقبة RSS/heap عبر الزمن وباستخدام heap snapshots (DevTools عبر `--inspect`) أو أدوات مثل `clinic`/`heapdump`. التقط لقطة heap وقارن الكائنات المحتفظ بها وابحث عن هياكل مرجعية زائدة أو إغلاقات تحتفظ بمراجع. استخدم البروفايلر لتحديد التخصيصات طويلة الأمد وارفع المراجع أو عدّل أنماط الكاش لإصلاح المشكلة."
+  },
+  {
+    "id": 10,
+    "question_en": "What is Node's garbage collector and how can you tune GC behavior?",
+    "answer_en": "Node uses V8's garbage collector (mark-and-sweep with generational & incremental strategies). You can tune GC via V8 flags (e.g., `--max-old-space-size` to increase heap limit) and monitor GC pauses with `--trace-gc`. For large memory apps, adjust heap size, reduce allocations, or offload heavy work to worker threads/processes to avoid long GC pauses.",
+    "question_ar": "ما هو garbage collector في Node وكيف تضبط سلوكه؟",
+    "answer_ar": "Node يستخدم جامع نفايات محرك V8 (mark-and-sweep مع استراتيجيات جيلية وتدريجية). يمكنك ضبط سلوك GC عبر أعلام V8 (مثل `--max-old-space-size` لزيادة حد الذاكرة) ومراقبة توقفات GC باستخدام `--trace-gc`. للتطبيقات الذاكرية الكبيرة، عدّل حجم heap، قلل من عمليات التخصيص، أو نفّذ العمل الثقيل في خيوط/عمليات منفصلة لتجنّب توقفات GC الطويلة."
+  },
+  {
+    "id": 11,
+    "question_en": "What are Async Hooks and when would you use them?",
+    "answer_en": "Async Hooks is a Node API for tracking the lifecycle of asynchronous resources (creation, before, after, destroy). It enables building diagnostic tools, async-context propagation (like continuation-local storage), tracing, and debugging. Use with care because hooks can add overhead; prefer higher-level libraries unless low-level tracing is required.",
+    "question_ar": "ما هي Async Hooks ومتى تستخدمها؟",
+    "answer_ar": "Async Hooks هي واجهة برمجة في Node لتتبّع دورة حياة الموارد غير المتزامنة (إنشاء، قبل، بعد، تدمير). تمكّن من بناء أدوات تشخيص، نشر سياق غير متزامن (مثل continuation-local storage)، التتبّع والتصحيح. استعملها بحذر لأنها قد تضيف حملًا؛ ويفضل استخدام مكتبات أعلى مستوى ما لم يكن التتبّع منخفض المستوى مطلوبًا."
+  },
+  {
+    "id": 12,
+    "question_en": "Best practices for error handling in Node.js applications?",
+    "answer_en": "Handle errors explicitly: use `try/catch` for async/await, handle rejected Promises globally (`unhandledRejection`) and uncaught exceptions (`uncaughtException`) with care (log + graceful shutdown). Validate inputs, avoid swallowing errors, and return meaningful HTTP error codes. Centralize error handling (middleware) and categorize operational vs programmer errors.",
+    "question_ar": "أفضل ممارسات التعامل مع الأخطاء في تطبيقات Node.js؟",
+    "answer_ar": "تعامل مع الأخطاء صراحةً: استخدم `try/catch` مع async/await، تعقّب الوعود المرفوضة عالميًا (`unhandledRejection`) والاستثناءات غير المعالجة (`uncaughtException`) بحذر (سجّل + اغلق التطبيق بسلاسة). حقّق من صحة المدخلات، تجنّب ابتلاع الأخطاء، وأعد رموز HTTP معبرة. جمّع معالجة الأخطاء (middleware) وفصّل بين الأخطاء التشغيلية وأخطاء المبرمج."
+  },
+  {
+    "id": 13,
+    "question_en": "How to convert callback-style APIs to Promises in Node?",
+    "answer_en": "Use `util.promisify()` to wrap standard callback-style functions (`(err, result)`) into functions that return Promises. For custom wrappers, create a new Promise and call `resolve`/`reject` inside the callback. This eases use of async/await and improves readability.",
+    "question_ar": "كيف تحول واجهات برمجة تعتمد على callbacks إلى Promises في Node؟",
+    "answer_ar": "استخدم `util.promisify()` لتغليف الدوال بنمط callback (`(err, result)`) إلى دوال تُرجع Promises. وللتغليف المخصص، أنشئ Promise جديدًا واستدعِ `resolve`/`reject` داخل الـ callback. هذا يسهل استخدام async/await ويحسّن قابلية القراءة."
+  },
+  {
+    "id": 14,
+    "question_en": "NPM: how to manage dependencies and avoid common pitfalls?",
+    "answer_en": "Pin production dependencies with exact versions or use lockfiles (`package-lock.json`) to ensure reproducible installs. Keep devDependencies separate, audit packages (`npm audit`), minimize transitive dependencies, avoid installing packages globally in production, and review packages for maintenance/security before adding them. Use semantic versioning responsibly.",
+    "question_ar": "NPM: كيف تدير التبعيات وتتجنب المشاكل الشائعة؟",
+    "answer_ar": "ثبّت إصدارات التبعيات الإنتاجية بدقة أو استخدم lockfile (`package-lock.json`) لضمان تثبيت متكرر. اجعل devDependencies منفصلة، افحص الحزم (`npm audit`)، قلل التبعيات العارضة، تجنّب التثبيتات العالمية في الإنتاج، وراجع الحزم من حيث الصيانة والأمان قبل إضافتها. اتبع الترقيم الدلالي (semver) بعناية."
+  },
+  {
+    "id": 15,
+    "question_en": "Node.js security: common risks and mitigations.",
+    "answer_en": "Common risks: injection (command/SQL), prototype pollution, insecure deserialization, dependency vulnerabilities, and improper secrets handling. Mitigations: validate and sanitize input, use parameterized queries, avoid `eval`/`child_process` with untrusted input, run `npm audit`, pin dependencies, store secrets in environment variables or secret managers, and apply least privilege.",
+    "question_ar": "أمن Node.js: المخاطر الشائعة وكيف تخففها.",
+    "answer_ar": "المخاطر الشائعة: الحقن (أوامر/SQL)، تلوّث النماذج (prototype pollution)، فك التسلسل غير الآمن، ثغرات التبعيات، وسوء التعامل مع الأسرار. التخفيف: تحقق ونقّح المدخلات، استخدم استعلامات مُعَلمه، تجنّب `eval`/`child_process` مع مدخلات غير موثوقة، نفّذ `npm audit`، ثبّت التبعيات، خزن الأسرار في متغيرات البيئة أو مدراء الأسرار، وطبق مبدأ أقل صلاحية."
+  },
+  {
+    "id": 16,
+    "question_en": "How to detect and avoid blocking the event loop?",
+    "answer_en": "Detect blocking by measuring event-loop lag (e.g., `setInterval` latency or tools like clinic) and profiling CPU. Avoid heavy synchronous computations in the main thread — offload CPU-bound work to worker threads or external services, stream large data instead of buffering, and batch synchronous work. Monitor response latency to catch regressions.",
+    "question_ar": "كيف تكتشف وتتفادى حجب حلقة الأحداث (blocking the event loop)؟",
+    "answer_ar": "اكتشف الحجب بقياس تأخّر حلقة الأحداث (lag) مثلاً عبر تأخير `setInterval` أو باستخدام أدوات مثل clinic وبروفيلاً للـ CPU. تجنّب الحسابات المتزامنة الثقيلة في الخيط الرئيسي — انقل العمل المُكثَّف للمعالج إلى worker threads أو خدمات خارجية، استخدم البث بدلاً من التجميع للبيانات الكبيرة، وجمّع الأعمال المتزامنة. راقب زمن الاستجابة لاكتشاف التدهور."
+  },
+  {
+    "id": 17,
+    "question_en": "Explain pipeline and stream utilities (`stream.pipeline`) and why to use them.",
+    "answer_en": "`stream.pipeline()` composes streams and handles cleanup and error propagation automatically (unlike manual piping). It prevents resource leaks and ensures that errors in any stream end the pipeline safely. Use it for robust stream composition (file -> transform -> response).",
+    "question_ar": "اشرح `stream.pipeline()` ولماذا يستخدم مع الـ streams.",
+    "answer_ar": "`stream.pipeline()` يجمع الـ streams ويعالج التنظيف وانتشار الأخطاء تلقائيًا (بدلاً من الربط اليدوي). يمنع تسريب الموارد ويضمن أن أي خطأ في أي stream يؤدي لإنهاء الآمنة للبايبلاين. استخدمه لتركيب تدفقات بشكل موثوق (مثلاً ملف -> تحويل -> استجابة)."
+  },
+  {
+    "id": 18,
+    "question_en": "When to use the built-in http module vs frameworks like Express?",
+    "answer_en": "Use the built-in `http` module for minimal, high-performance, or low-level control (custom protocols, very small services). Use frameworks (Express, Fastify) for productivity: routing, middleware, error handling, and ecosystem. Frameworks add convenience but some overhead; choose based on complexity and performance needs.",
+    "question_ar": "متى تستخدم وحدة `http` المدمجة مقابل أطر مثل Express؟",
+    "answer_ar": "استخدم وحدة `http` المدمجة للحالات البسيطة، الأداء العالي، أو عندما تحتاج تحكمًا منخفض المستوى (بروتوكولات مخصّصة، خدمات صغيرة جدًا). استخدم أطر العمل (Express، Fastify) للإنتاجية: التوجيه، الميدل وير، معالجة الأخطاء، والنظام البيئي. الأطر تضيف سهولة لكن مع بعض الحمل؛ اختر حسب التعقيد واحتياجات الأداء."
+  },
+  {
+    "id": 19,
+    "question_en": "How to enable HTTPS/TLS in a Node.js server?",
+    "answer_en": "Use the `https` module with server certificate and private key (`https.createServer({ key, cert }, handler)`). For production, obtain certificates from a CA (e.g., Let's Encrypt) and manage renewal. Offload TLS to a reverse proxy (NGINX/Cloud Load Balancer) if preferred for easier certificate management and performance.",
+    "question_ar": "كيف تفعّل HTTPS/TLS في سيرفر Node.js؟",
+    "answer_ar": "استخدم وحدة `https` مع شهادة الخادم والمفتاح الخاص (`https.createServer({ key, cert }, handler)`). في الإنتاج، احصل على شهادات من جهة إصدار موثوقة (مثل Let's Encrypt) وادِر التجديد. يمكنك أيضًا تفويض TLS إلى reverse proxy (NGINX/موازن تحميل سحابي) لتسهيل إدارة الشهادات وتحسين الأداء."
+  },
+  {
+    "id": 20,
+    "question_en": "What are strategies for clustering and sticky sessions?",
+    "answer_en": "Clustering runs multiple Node worker processes to use CPU cores. For stateful sessions, implement sticky sessions at the load balancer level (route same client to same worker) or keep sessions in a shared store (Redis) so any worker can handle requests. Shared stores are more resilient and recommended for scaling.",
+    "question_ar": "ما هي استراتيجيات التجميع (clustering) وsticky sessions؟",
+    "answer_ar": "التجميع يشغّل عدة عمليات Node لتستغل أنوية المعالج. للجلسات الحالة (stateful)، طبّق sticky sessions عند موازن التحميل (إعادة توجيه نفس العميل لنفس العامل) أو خزّن الجلسات في مخزن مشترك (Redis) بحيث يمكن لأي عامل التعامل مع الطلبات. المخازن المشتركة أكثر مرونة ومُوصى بها للتوسّع."
+  },
+  {
+    "id": 21,
+    "question_en": "How should a Node.js process handle signals and graceful shutdown?",
+    "answer_en": "Listen for signals like `SIGINT`/`SIGTERM`, stop accepting new requests, finish ongoing requests, close DB connections, flush logs, and then exit. Implement timeouts to force exit if shutdown hangs. Graceful shutdown avoids request loss and resource leaks during deploys or restarts.",
+    "question_ar": "كيف يتعامل عملية Node.js مع الإشارات (signals) وإيقاف التشغيل الآمن (graceful shutdown)؟",
+    "answer_ar": "استمع لإشارات مثل `SIGINT`/`SIGTERM`، أوقف قبول الطلبات الجديدة، أنهِ الطلبات الجارية، اغلق اتصالات قواعد البيانات، افرغ السجلات ثم اخرج. طبّق مؤقتًا لإجبار الإنهاء إذا تعلّق الإيقاف. الإيقاف الآمن يمنع فقدان الطلبات وتسريبات الموارد أثناء النشر أو إعادة التشغيل."
+  },
+  {
+    "id": 22,
+    "question_en": "What are native addons (node-gyp) and when would you write one?",
+    "answer_en": "Native addons are dynamically-linked libraries written in C/C++ that extend Node with native performance or access to system APIs. They are built with tools like `node-gyp`. Write native addons when you need CPU-bound performance optimizations, access to platform-specific APIs, or to reuse existing C/C++ libraries — but prefer pure JS or WebAssembly first due to complexity and build challenges.",
+    "question_ar": "ما هي الإضافات الأصلية (native addons - node-gyp) ومتى تكتب واحدة؟",
+    "answer_ar": "الإضافات الأصلية هي مكتبات مرتبطة ديناميكيًا مكتوبة بلغة C/C++ توسّع Node لأداء أصلي أو الوصول إلى واجهات النظام. تُبنى بأدوات مثل `node-gyp`. اكتب إضافة أصلية عندما تحتاج لتحسينات أداء CPU-bound، أو للوصول لواجهة نظام خاصة، أو لإعادة استخدام مكتبات C/C++ موجودة — لكن فضّل JS النقي أو WebAssembly أولًا بسبب التعقيد ومتطلبات البناء."
   }
 ]

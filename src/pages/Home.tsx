@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Database, Globe, Layers, Server, GraduationCap } from 'lucide-react';
+import { ArrowRight, Code, Database, Globe, Layers, Server, GraduationCap, ListTree } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -65,6 +65,22 @@ const Home: React.FC = () => {
       href: '/backend-exam',
       icon: GraduationCap,
       gradient: 'from-teal-500 to-cyan-500',
+    },
+    {
+      key: 'algorithms-data-structures',
+      title: t('algorithms.title'),
+      description: t('algorithms.intro'),
+      href: '/algorithms-data-structures',
+      icon: ListTree,
+      gradient: 'from-yellow-500 to-orange-500',
+    },
+    {
+      key: 'javascript-interpreter',
+      title: t('js.title'),
+      description: t('js.subtitle'),
+      href: '/javascript-interpreter',
+      icon: Code,
+      gradient: 'from-blue-500 to-cyan-500',
     },
   ];
 
@@ -198,7 +214,7 @@ const Home: React.FC = () => {
                     </CardHeader>
                     <CardContent>
                       <div className="flex items-center text-primary group-hover:translate-x-2 transition-transform duration-200">
-                        <span className="text-sm font-medium">Start Learning</span>
+                        <span className="text-sm font-medium">{t('home.start_learning')}</span>
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </div>
                     </CardContent>

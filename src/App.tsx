@@ -10,6 +10,9 @@ import BackendTech from './pages/BackendTech';
 import WebGeneral from './pages/WebGeneral';
 import FrontendExam from './pages/FrontendExam';
 import BackendExam from './pages/BackendExam';
+
+import AlgorithmsDataStructures from './pages/AlgorithmsDataStructures';
+import JavaScriptInterpreter from './pages/JavaScriptInterpreter';
 import { Toaster } from '@/components/ui/sonner';
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
               <Route path="/web-general" element={<WebGeneral />} />
               <Route path="/frontend-exam" element={<FrontendExam />} />
               <Route path="/backend-exam" element={<BackendExam />} />
+              <Route path="/algorithms-data-structures" element={<AlgorithmsDataStructures />} />
+              <Route path="/javascript-interpreter" element={<JavaScriptInterpreter />} />
             </Routes>
           </Layout>
           <Toaster />

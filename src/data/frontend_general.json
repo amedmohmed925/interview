@@ -1,23 +1,142 @@
 [
   {
     "id": 1,
-    "question_en": "What is frontend development?",
-    "answer_en": "Frontend development is the practice of producing HTML, CSS, and JavaScript for a website or web application so that users can see and interact with them directly. It involves creating the user interface (UI) and user experience (UX) of a website.\n\nKey responsibilities include:\n• Creating responsive and accessible web interfaces\n• Implementing interactive features using JavaScript\n• Ensuring cross-browser compatibility\n• Optimizing website performance\n• Collaborating with designers and backend developers",
-    "question_ar": "ما هو تطوير الواجهة الأمامية؟",
-    "answer_ar": "تطوير الواجهة الأمامية هو عملية إنتاج HTML وCSS وJavaScript لموقع ويب أو تطبيق ويب بحيث يمكن للمستخدمين رؤيتها والتفاعل معها مباشرة. يتضمن إنشاء واجهة المستخدم (UI) وتجربة المستخدم (UX) للموقع.\n\nالمسؤوليات الرئيسية تشمل:\n• إنشاء واجهات ويب متجاوبة ومتاحة\n• تنفيذ الميزات التفاعلية باستخدام JavaScript\n• ضمان التوافق مع المتصفحات المختلفة\n• تحسين أداء الموقع\n• التعاون مع المصممين ومطوري الخادم"
+    "question_en": "What is the Document Object Model (DOM)?",
+    "answer_en": "The DOM is a tree-like representation of the HTML document that the browser builds when it parses HTML. It exposes the page structure as nodes (elements, text, attributes) that JavaScript can read and manipulate to change the document dynamically.\n\nKey points:\n• Represents structure and content of the document\n• Modifying the DOM updates the rendered page\n• Frequent DOM reads/writes can harm performance; batch updates when possible",
+    "question_ar": "ما هو نموذج كائن المستند (DOM)؟",
+    "answer_ar": "DOM هو تمثيل شجري لملف HTML يقوم المتصفح ببنائه عند تحليل الصفحة. يعرض بنية الصفحة كعُقد (عناصر، نصوص، وسمات) يمكن لجافاسكربت قراءتها والتعديل عليها لتغيير الصفحة ديناميكيًا.\n\nنقاط مهمة:\n• يمثل بنية ومحتوى المستند\n• تعديل DOM يؤدي إلى تحديث العرض\n• القراءات/الكتابات المتكررة على DOM تؤثر على الأداء؛ حاول تجميع التحديثات"
   },
   {
     "id": 2,
-    "question_en": "What is the difference between HTML, CSS, and JavaScript?",
-    "answer_en": "HTML, CSS, and JavaScript are the three core technologies for frontend web development:\n\n**HTML (HyperText Markup Language):**\n• Structure and content of web pages\n• Defines elements like headings, paragraphs, links, images\n• Semantic markup for accessibility and SEO\n\n**CSS (Cascading Style Sheets):**\n• Styling and layout of web pages\n• Controls colors, fonts, spacing, positioning\n• Responsive design and animations\n\n**JavaScript:**\n• Programming language for interactivity\n• Handles user interactions, form validation\n• Dynamic content updates and API calls\n• Modern frameworks and libraries",
-    "question_ar": "ما الفرق بين HTML وCSS وJavaScript؟",
-    "answer_ar": "HTML وCSS وJavaScript هي التقنيات الأساسية الثلاث لتطوير الواجهة الأمامية:\n\n**HTML (لغة ترميز النص التشعبي):**\n• هيكل ومحتوى صفحات الويب\n• يحدد العناصر مثل العناوين والفقرات والروابط والصور\n• الترميز الدلالي لإمكانية الوصول وتحسين محركات البحث\n\n**CSS (أوراق الأنماط المتتالية):**\n• تصميم وتخطيط صفحات الويب\n• يتحكم في الألوان والخطوط والمسافات والمواضع\n• التصميم المتجاوب والرسوم المتحركة\n\n**JavaScript:**\n• لغة برمجة للتفاعل\n• يتعامل مع تفاعلات المستخدم والتحقق من النماذج\n• تحديثات المحتوى الديناميكي واستدعاءات API\n• الأطر والمكتبات الحديثة"
+    "question_en": "What is semantic HTML and why is it important?",
+    "answer_en": "Semantic HTML uses meaningful tags (like `<header>`, `<nav>`, `<article>`, `<main>`, `<footer>`) instead of generic `<div>`s to describe the purpose of content. It improves accessibility, SEO, and makes the structure easier to maintain.\n\nBenefits:\n• Better screen reader support\n• Easier styling and maintainability\n• Improved search engine understanding",
+    "question_ar": "ما هو الـ HTML الدلالي ولماذا هو مهم؟",
+    "answer_ar": "الـ HTML الدلالي يستخدم وسوم ذات معنى (مثل `<header>`، `<nav>`، `<article>`، `<main>`، `<footer>`) بدلاً من `<div>` العامة لوصف غرض المحتوى. يحسّن الوصولية، SEO، ويسهّل صيانة البنية.\n\nالفوائد:\n• دعم أفضل لقارئات الشاشة\n• تسهيل التنسيق والصيانة\n• فهم أفضل للمحتوى بواسطة محركات البحث"
   },
   {
     "id": 3,
-    "question_en": "What is responsive web design?",
-    "answer_en": "Responsive web design is an approach to web design that makes web pages render well on various devices and window or screen sizes. It ensures optimal viewing experience across desktop computers, tablets, and mobile phones.\n\nKey principles:\n• **Fluid grids:** Layout adapts to screen size\n• **Flexible images:** Images scale appropriately\n• **Media queries:** CSS rules for different screen sizes\n• **Mobile-first approach:** Design for mobile, then scale up\n• **Touch-friendly interfaces:** Larger buttons and touch targets\n\nBenefits:\n• Better user experience across all devices\n• Improved SEO rankings\n• Cost-effective (one site for all devices)\n• Future-proof design",
-    "question_ar": "ما هو التصميم المتجاوب للويب؟",
-    "answer_ar": "التصميم المتجاوب للويب هو نهج في تصميم الويب يجعل صفحات الويب تُعرض بشكل جيد على أجهزة مختلفة وأحجام نوافذ أو شاشات متنوعة. يضمن تجربة عرض مثلى عبر أجهزة الكمبيوتر المكتبية والأجهزة اللوحية والهواتف المحمولة.\n\nالمبادئ الأساسية:\n• **الشبكات المرنة:** التخطيط يتكيف مع حجم الشاشة\n• **الصور المرنة:** الصور تتحجم بشكل مناسب\n• **استعلامات الوسائط:** قواعد CSS لأحجام الشاشات المختلفة\n• **نهج الموبايل أولاً:** التصميم للمحمول ثم التوسع\n• **واجهات صديقة للمس:** أزرار أكبر وأهداف لمس\n\nالفوائد:\n• تجربة مستخدم أفضل عبر جميع الأجهزة\n• تحسين ترتيب محركات البحث\n• فعال من حيث التكلفة (موقع واحد لجميع الأجهزة)\n• تصميم مقاوم للمستقبل"
+    "question_en": "Explain CSS Flexbox and when to use it.",
+    "answer_en": "Flexbox is a one-dimensional layout model for arranging items along a row or column. It provides alignment, spacing, and ordering controls easily.\n\nWhen to use:\n• For linear layouts (nav bars, toolbars, list items)\n• When you need flexible item sizing and alignment\n• Complementary to CSS Grid for component-level layout",
+    "question_ar": "اشرح Flexbox ومتى تستخدمه.",
+    "answer_ar": "Flexbox هو نموذج تخطيط أحادي البُعد لترتيب العناصر في صف أو عمود. يوفّر تحكمًا سهلًا في المحاذاة، التباعد، وترتيب العناصر.\n\nمتى تستخدمه:\n• للتخطيطات الخطية (شريط تنقّل، أشرطة أدوات، عناصر قائمة)\n• عندما تحتاج حجمًا ومحاذاة مرنة للعناصر\n• يُكمل CSS Grid لتخطيطات مستوى المكوّن"
+  },
+  {
+    "id": 4,
+    "question_en": "Explain CSS Grid and when to use it.",
+    "answer_en": "CSS Grid is a two-dimensional layout system for creating complex grid-based designs (rows and columns). It excels at page-level and complex component layouts.\n\nWhen to use:\n• For two-dimensional layouts (grids, dashboards)\n• When you need explicit row/column control\n• Combine with Flexbox for internal item alignment",
+    "question_ar": "اشرح CSS Grid ومتى تستخدمه.",
+    "answer_ar": "CSS Grid هو نظام تخطيط ثنائي الأبعاد لإنشاء تصميمات شبكية معقدة (صفوف وأعمدة). يتفوّق في تخطيطات مستوى الصفحة والمكوّنات المعقدة.\n\nمتى تستخدمه:\n• للتخطيطات ثنائية الأبعاد (شبكات، لوحات تحكم)\n• عندما تحتاج تحكمًا صريحًا في الصفوف/الأعمدة\n• اجمعه مع Flexbox لمحاذاة عناصر داخلية"
+  },
+  {
+    "id": 5,
+    "question_en": "What are CSS custom properties (variables) and why use them?",
+    "answer_en": "CSS custom properties (`--my-var`) allow you to define reusable values in CSS that can be referenced and updated at runtime. They help maintain consistency and enable theming.\n\nAdvantages:\n• Dynamic theming and runtime updates\n• Reduces duplication and centralizes design tokens\n• Can be scoped to elements for flexible overrides",
+    "question_ar": "ما هي خصائص CSS المخصصة (variables) ولماذا تستخدمها؟",
+    "answer_ar": "خصائص CSS المخصصة (`--my-var`) تتيح تعريف قيم قابلة لإعادة الاستخدام في CSS يمكن الرجوع إليها وتعديلها أثناء التشغيل. تساعد في توحيد التصميم وتمكين الثيمات.\n\nالمزايا:\n• ثيمات ديناميكية وتحديثات وقت التشغيل\n• تقليل التكرار ومركزة قيم التصميم\n• قابلة للتحديد على عناصر لفروقات محلية"
+  },
+  {
+    "id": 6,
+    "question_en": "What is the difference between CSS transitions and animations?",
+    "answer_en": "Transitions provide simple state-to-state animations triggered by property changes (hover, class toggle). Animations (using `@keyframes`) allow complex sequences, timing functions, and repeated cycles.\n\nUse transitions for simple interactions and animations for multi-step or continuous effects.",
+    "question_ar": "ما الفرق بين CSS transitions وanimations؟",
+    "answer_ar": "الـ transitions توفر انتقالًا بسيطًا من حالة إلى أخرى عند تغيير خاصية (hover، تبديل الكلاس). أما animations (`@keyframes`) فتمكنك من تعريف تسلسل معقد، وظائف توقيت، وتكرار.\n\nاستخدم transitions للتأثيرات البسيطة، وanimations للتأثيرات متعددة الخطوات أو المستمرة"
+  },
+  {
+    "id": 7,
+    "question_en": "What is event propagation in the DOM (capturing and bubbling)?",
+    "answer_en": "Event propagation defines how events travel through the DOM: capturing phase (from root down to target), target phase, and bubbling phase (from target up to root). Listeners can be attached for capturing or bubbling. Understanding this helps manage delegated events and stop propagation when needed.",
+    "question_ar": "ما هو انتشار الأحداث في DOM (capturing وbubbling)؟",
+    "answer_ar": "انتشار الأحداث يحدد كيف تنتقل الأحداث في DOM: مرحلة الالتقاط (من الجذر نحو الهدف)، مرحلة الهدف، ومرحلة الفقس/الارتداد (من الهدف إلى الجذر). يمكن ربط المستمعين لمرحلة الالتقاط أو الفقس. فهم ذلك يساعد في إدارة تفويض الأحداث وإيقاف الانتشار عند الحاجة"
+  },
+  {
+    "id": 8,
+    "question_en": "What is the JavaScript event loop (brief)?",
+    "answer_en": "The event loop allows JavaScript to handle asynchronous callbacks in a single-threaded environment. Tasks are scheduled in macrotasks and microtasks; microtasks (Promises) run before the next rendering frame and before macrotasks. Blocking the main thread with heavy synchronous work freezes the UI.",
+    "question_ar": "ما هي حلقة الأحداث في جافاسكربت (مختصر)؟",
+    "answer_ar": "حلقة الأحداث تمكّن جافاسكربت من التعامل مع الاستدعاءات غير المتزامنة في بيئة أحادية الخيط. تُجدول المهام في ماكروتاكسكات وميكروتاكسكات؛ الميكروتاكسكات (Promises) تُنفّذ قبل الإطار الرسومي التالي وقبل الماكروتاكسكات. حظر الخيط الرئيسي بعمليات متزامنة ثقيلة يجمّد واجهة المستخدم"
+  },
+  {
+    "id": 9,
+    "question_en": "What are Web Components and what problems do they solve?",
+    "answer_en": "Web Components (Custom Elements, Shadow DOM, Templates) let you create encapsulated, reusable UI elements that work across frameworks. They solve style/markup encapsulation and reuse across projects without coupling to a specific framework.",
+    "question_ar": "ما هي Web Components وما المشكلات التي تحلّها؟",
+    "answer_ar": "Web Components (Custom Elements، Shadow DOM، Templates) تتيح إنشاء عناصر واجهة معزولة وقابلة لإعادة الاستخدام تعمل عبر الأطر. تحل مشاكل عزل الأنماط/العلامات وإعادة الاستخدام عبر مشاريع دون الارتباط بإطار معين"
+  },
+  {
+    "id": 10,
+    "question_en": "What is lazy loading and how does it help performance?",
+    "answer_en": "Lazy loading defers loading resources (images, modules) until they are needed (e.g., when they enter the viewport). It reduces initial page weight and speeds up time-to-interactive by avoiding download and parsing of non-critical resources.",
+    "question_ar": "ما هو التحميل الكسول (lazy loading) وكيف يساعد الأداء؟",
+    "answer_ar": "التحميل الكسول يؤخر تحميل الموارد (صور، وحدات) حتى الحاجة إليها (عند دخولها منطقة العرض). يقلّل وزن الصفحة الأولي ويسرّع زمن التفاعل عن طريق تجنّب تنزيل وتحليل موارد غير حاسمة"
+  },
+  {
+    "id": 11,
+    "question_en": "What is code-splitting and why is it used?",
+    "answer_en": "Code-splitting breaks a large JavaScript bundle into smaller chunks that are loaded on demand. It reduces initial bundle size and improves perceived performance by loading only the code needed for the current route or interaction.",
+    "question_ar": "ما هو تقطيع الكود (code-splitting) ولماذا يُستخدم؟",
+    "answer_ar": "تقطيع الكود يقسم الحزمة الكبيرة إلى أجزاء أصغر تُحمّل عند الطلب. يقلّل حجم الحزمة الأولي ويُحسّن الأداء المدرك بتحميل الكود الضروري للصفحة أو التفاعل الحالي فقط"
+  },
+  {
+    "id": 12,
+    "question_en": "How do you optimize web fonts for performance?",
+    "answer_en": "Font optimization strategies:\n• Use `font-display` to control fallback behaviour\n• Subset fonts to include only needed glyphs\n• Serve modern formats (WOFF2) with fallbacks\n• Preload critical fonts and use `rel=\"preload\"`\n• Limit number of different font families and weights",
+    "question_ar": "كيف تحسّن خطوط الويب للأداء؟",
+    "answer_ar": "استراتيجيات تحسين الخطوط:\n• استخدم `font-display` للتحكم بسلوك البدائل\n• اقتطع الخط (subset) للاحتفاظ بالحروف المطلوبة فقط\n• قدم صيغ حديثة (WOFF2) مع بدائل\n• قم بpreload للخطوط الحرجة باستخدام `rel=\"preload\"`\n• قلّل عدد عائلات الخطوط والأوزان"
+  },
+  {
+    "id": 13,
+    "question_en": "What is accessibility (a11y) — practical checks you perform?",
+    "answer_en": "Practical accessibility checks:\n• Ensure semantic HTML and correct heading order\n• Provide meaningful `alt` text for images\n• Verify keyboard navigation and visible focus states\n• Check color contrast ratios and scalable text\n• Test with screen readers and run automated audits (Lighthouse, axe)",
+    "question_ar": "ما هي الوصولية (a11y) — وفحوص عملية تقوم بها؟",
+    "answer_ar": "فحوص عملية للوصولية:\n• تأكد من HTML دلالي وترتيب العناوين الصحيح\n• قدّم نصًا بديلًا مفيدًا للصور (`alt`)\n• تحقّق من التنقّل عبر لوحة المفاتيح وحالة التركيز المرئية\n• افحص نسب تباين الألوان وقابلية تكبير النص\n• اختبر مع قارئات الشاشة وشغّل مراجعات آلية (Lighthouse، axe)"
+  },
+  {
+    "id": 14,
+    "question_en": "How do you prevent and mitigate layout shifts (CLS)?",
+    "answer_en": "Prevent CLS by reserving space: add width/height or aspect-ratio for images/videos, reserve slots for ads/iframes, avoid inserting content above existing content unexpectedly, use `font-display` to control font swapping, and animate with transforms instead of changing layout-affecting properties.",
+    "question_ar": "كيف تمنع وتقلّل تغيير التخطيط (CLS)؟",
+    "answer_ar": "للوقاية من CLS احجز المساحة أولًا: عيّن width/height أو استخدم aspect-ratio للصور/الفيديوهات، احجز أماكن للإعلانات/iframes، تجنّب إدراج محتوى فوق المحتوى الحالي دون انتظار المستخدم، استخدم `font-display` للتحكم بتبديل الخطوط، وحرّك العناصر باستخدام transform بدلًا من خصائص تؤثر على التخطيط"
+  },
+  {
+    "id": 15,
+    "question_en": "What is XSS (Cross-Site Scripting) and how do you defend against it on the front-end?",
+    "answer_en": "XSS is when untrusted input becomes executable script in the browser. Frontend defenses:\n• Escape/sanitize user-provided content before inserting into HTML\n• Avoid `innerHTML` with untrusted data\n• Use frameworks' templating which auto-escapes\n• Apply Content Security Policy (CSP) headers (configured server-side) to restrict script sources",
+    "question_ar": "ما هي ثغرة XSS وكيف تدافع ضدها من جهة الواجهة الأمامية؟",
+    "answer_ar": "XSS تحدث عندما يصبح إدخال غير موثوق به سكربتًا يُنفَّذ في المتصفح. دفاعات الواجهة:\n• قم بهرس/تنظيف المدخلات قبل إدراجها في HTML\n• تجنّب `innerHTML` مع بيانات غير موثوقة\n• استخدم قوالب الأطر التي تقوم بالهروب آليًا\n• طبّق سياسة أمان المحتوى (CSP) للحد من مصادر السكربت (تُضبط من جهة الخادم)"
+  },
+  {
+    "id": 16,
+    "question_en": "How do you debug performance problems in the browser?",
+    "answer_en": "Use DevTools Performance/Timeline to record page activity, identify long tasks, paint/layout times, and scripting hotspots. Use Network panel to inspect resource sizes and timing. Use Lighthouse for audits and Real User Monitoring (RUM) for field data. Profile JavaScript to find slow functions and reduce work on the main thread.",
+    "question_ar": "كيف تقوم بتصحيح مشاكل الأداء في المتصفح؟",
+    "answer_ar": "استخدم DevTools Performance/Timeline لتسجيل نشاط الصفحة وتحديد المهام الطويلة، أوقات paint/layout، ونقاط عُقَد السكربت. استخدم لوحة الشبكة لفحص أحجام الموارد وتوقيتها. نفّذ Lighthouse للمراجعات واستخدم RUM لبيانات المستخدمين الحقيقية. قم بعمل بروفايل لجافاسكربت لإيجاد الدوال البطيئة وتقليل العمل على الخيط الرئيسي"
+  },
+  {
+    "id": 17,
+    "question_en": "What are Progressive Web Apps (PWAs) and key front-end considerations?",
+    "answer_en": "PWAs provide app-like features (installability, offline) using service workers and a web manifest. Frontend considerations include handling offline UI, caching strategies in service workers, proper manifest icons/metadata, responsive UI, and graceful fallbacks when service workers are unsupported.",
+    "question_ar": "ما هي تطبيقات الويب التقدّمية وما الاعتبارات الأمامية لها؟",
+    "answer_ar": "PWAs تقدّم مزايا تشبه التطبيقات (قابلة للتثبيت، تعمل دون اتصال) باستخدام service workers وweb manifest. اعتبارات الواجهة: التعامل مع واجهة دون اتصال، استراتيجيات التخزين المؤقت في service worker، أيقونات وبيانات manifest صحيحة، واجهة متجاوبة، وبدائل ملائمة عند غياب دعم service worker"
+  },
+  {
+    "id": 18,
+    "question_en": "What is progressive enhancement and how does it differ from graceful degradation?",
+    "answer_en": "Progressive enhancement builds a basic, functional experience first (HTML/CSS), then adds advanced features (JS) for capable browsers. Graceful degradation starts with a full-featured experience and tries to degrade gracefully on older browsers. Progressive enhancement is more robust for accessibility and baseline support.",
+    "question_ar": "ما هو progressive enhancement وكيف يختلف عن graceful degradation؟",
+    "answer_ar": "Progressive enhancement يبني تجربة أساسية ووظيفية أولًا (HTML/CSS)، ثم يضيف ميزات متقدمة (JS) للمتصفحات القادرة. أما graceful degradation فتبدأ بتجربة كاملة وتحاول التراجع بسلاسة على المتصفحات القديمة. progressive enhancement أكثر صلابة للوصولية والدعم الأساسي"
+  },
+  {
+    "id": 19,
+    "question_en": "What frontend metrics do you track to measure user experience?",
+    "answer_en": "Common metrics:\n• FCP (First Contentful Paint)\n• LCP (Largest Contentful Paint)\n• TTI (Time to Interactive)\n• CLS (Cumulative Layout Shift)\n• FID (First Input Delay) or INP (Interaction to Next Paint)\n\nTrack via Lighthouse, DevTools, and RUM for real-world performance.",
+    "question_ar": "ما هي مؤشرات الواجهة التي تتابعها لقياس تجربة المستخدم؟",
+    "answer_ar": "المؤشرات الشائعة:\n• FCP (أول رسم لمحتوى)\n• LCP (أكبر رسم لمحتوى)\n• TTI (زمن التفاعل)\n• CLS (تغير التخطيط التراكمي)\n• FID (تأخير أول إدخال) أو INP\n\nتابعها باستخدام Lighthouse، DevTools، وRUM للحصول على بيانات من العالم الحقيقي"
+  },
+  {
+    "id": 20,
+    "question_en": "How do you test frontend components and UI?",
+    "answer_en": "Testing layers:\n• Unit tests for functions and isolated components (Jest)\n• Integration tests for component interactions (React Testing Library)\n• Visual regression tests for UI changes (Percy, Chromatic)\n• E2E tests for full user flows (Cypress, Playwright)\n\nAutomate tests in CI and keep unit tests fast and focused.",
+    "question_ar": "كيف تختبر مكوّنات الواجهة وواجهة المستخدم؟",
+    "answer_ar": "طبقات الاختبار:\n• اختبارات وحدة للدوال والمكوّنات المعزولة (Jest)\n• اختبارات تكامل لتفاعلات المكوّنات (React Testing Library)\n• اختبارات انحراف بصري للتغييرات (Percy، Chromatic)\n• اختبارات شاملة لتدفّقات المستخدم الكاملة (Cypress، Playwright)\n\nأتمتة الاختبارات في CI واجعل اختبارات الوحدة سريعة ومركّزة"
   }
 ]
