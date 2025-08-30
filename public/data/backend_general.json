@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "question_en": "What is backend development?",
+    "answer_en": "Backend development refers to server-side development - the part of web development that deals with the server, databases, and application logic that users don't see directly. Backend developers work on the infrastructure that powers the frontend.\n\nKey responsibilities:\n• **Server logic:** Writing code that runs on servers\n• **Database management:** Storing, retrieving, and managing data\n• **API development:** Creating endpoints for frontend communication\n• **Security:** Implementing authentication, authorization, data protection\n• **Performance optimization:** Ensuring fast response times and scalability\n• **Infrastructure:** Managing servers, deployment, and monitoring\n\nCommon technologies:\n• Languages: Python, Java, JavaScript (Node.js), PHP, C#, Go\n• Databases: MySQL, PostgreSQL, MongoDB, Redis\n• Frameworks: Express.js, Django, Spring Boot, Laravel",
+    "question_ar": "ما هو تطوير الخادم؟",
+    "answer_ar": "تطوير الخادم يشير إلى التطوير من جانب الخادم - الجزء من تطوير الويب الذي يتعامل مع الخادم وقواعد البيانات ومنطق التطبيق الذي لا يراه المستخدمون مباشرة. مطورو الخادم يعملون على البنية التحتية التي تشغل الواجهة الأمامية.\n\nالمسؤوليات الرئيسية:\n• **منطق الخادم:** كتابة كود يعمل على الخوادم\n• **إدارة قواعد البيانات:** تخزين واسترجاع وإدارة البيانات\n• **تطوير API:** إنشاء نقاط النهاية للتواصل مع الواجهة الأمامية\n• **الأمان:** تنفيذ المصادقة والتفويض وحماية البيانات\n• **تحسين الأداء:** ضمان أوقات استجابة سريعة وقابلية التوسع\n• **البنية التحتية:** إدارة الخوادم والنشر والمراقبة\n\nالتقنيات الشائعة:\n• اللغات: Python، Java، JavaScript (Node.js)، PHP، C#، Go\n• قواعد البيانات: MySQL، PostgreSQL، MongoDB، Redis\n• أطر العمل: Express.js، Django، Spring Boot، Laravel"
+  },
+  {
+    "id": 2,
+    "question_en": "What is an API?",
+    "answer_en": "API (Application Programming Interface) is a set of protocols, routines, and tools for building software applications. It specifies how software components should interact and allows different applications to communicate with each other.\n\nTypes of APIs:\n• **REST APIs:** Use HTTP methods (GET, POST, PUT, DELETE)\n• **GraphQL:** Query language for APIs with flexible data fetching\n• **SOAP:** Protocol for exchanging structured information\n• **WebSocket APIs:** Real-time bidirectional communication\n\nKey concepts:\n• **Endpoints:** Specific URLs where API can be accessed\n• **HTTP methods:** Different actions (GET, POST, PUT, DELETE)\n• **Status codes:** Indicate the result of API requests\n• **Authentication:** Securing API access\n• **Rate limiting:** Controlling API usage\n\nBest practices:\n• Clear and consistent naming\n• Proper error handling\n• Comprehensive documentation\n• Version control",
+    "question_ar": "ما هو API؟",
+    "answer_ar": "API (واجهة برمجة التطبيقات) هو مجموعة من البروتوكولات والإجراءات والأدوات لبناء تطبيقات البرمجيات. يحدد كيفية تفاعل مكونات البرمجيات ويسمح لتطبيقات مختلفة بالتواصل مع بعضها البعض.\n\nأنواع APIs:\n• **REST APIs:** تستخدم طرق HTTP (GET، POST، PUT، DELETE)\n• **GraphQL:** لغة استعلام لـ APIs مع جلب بيانات مرن\n• **SOAP:** بروتوكول لتبادل المعلومات المنظمة\n• **WebSocket APIs:** تواصل ثنائي الاتجاه في الوقت الفعلي\n\nالمفاهيم الرئيسية:\n• **نقاط النهاية:** URLs محددة حيث يمكن الوصول إلى API\n• **طرق HTTP:** إجراءات مختلفة (GET، POST، PUT، DELETE)\n• **رموز الحالة:** تشير إلى نتيجة طلبات API\n• **المصادقة:** تأمين الوصول إلى API\n• **تحديد المعدل:** التحكم في استخدام API\n\nأفضل الممارسات:\n• تسمية واضحة ومتسقة\n• معالجة أخطاء مناسبة\n• توثيق شامل\n• التحكم في الإصدار"
+  },
+  {
+    "id": 3,
+    "question_en": "What is REST and what are its core constraints?",
+    "answer_en": "REST (Representational State Transfer) is an architectural style for building web services that relies on stateless communication, resource-based URIs, standard HTTP methods (GET, POST, PUT, DELETE), and representations (JSON, XML). Core constraints include statelessness, a uniform interface, client-server separation, cacheability, and layered system.\n\nBenefits: simplicity, scalability, and leveraging HTTP semantics.",
+    "question_ar": "ما هو REST وما هي القيود الأساسية له؟",
+    "answer_ar": "REST هو نمط معماري لبناء خدمات الويب يعتمد على تواصل بلا حالة (stateless)، عناوين موارد (URIs) تمثل الموارد، وطرق HTTP القياسية (GET، POST، PUT، DELETE) وتمثيلات مثل JSON أو XML. القيود الأساسية تشمل: عدم الاحتفاظ بالحالة، واجهة موحدة، فصل العميل عن الخادم، قابلية التخزين المؤقت، ونظام متعدد الطبقات.\n\nالفوائد: البساطة، القابلية للتوسع، والاستفادة من معاني HTTP."
+  },
+  {
+    "id": 4,
+    "question_en": "What is GraphQL and when would you use it instead of REST?",
+    "answer_en": "GraphQL is a query language and runtime for APIs that lets clients request exactly the data shape they need from a single endpoint. Use GraphQL when clients require flexible queries (avoid over/under-fetching), when you need type-safe schemas and introspection, or when aggregating data from multiple services into a single schema.\n\nTrade-offs: more complex server setup and caching compared to REST.",
+    "question_ar": "ما هو GraphQL ومتى تستخدمه بدلًا من REST؟",
+    "answer_ar": "GraphQL هي لغة استعلام ووقت تشغيل للـ APIs تتيح للعميل طلب شكل البيانات الذي يحتاجه بالضبط عبر نقطة نهاية واحدة. استخدمه عندما يحتاج العميل مرونة بالاستعلامات (لتجنب جلب بيانات زائدة أو ناقصة)، أو عندما تريد مخططًا ذا نوعية مضبوطًا وقابلية الاستكشاف، أو عند تجميع بيانات من خدمات متعددة.\n\nالمقايضات: إعداد خادم أكثر تعقيدًا وصعوبات في التخزين المؤقت مقارنةً بـ REST."
+  },
+  {
+    "id": 5,
+    "question_en": "Explain authentication vs authorization.",
+    "answer_en": "Authentication verifies who a user or service is (e.g., login with username/password, tokens). Authorization determines what an authenticated entity is allowed to do (permissions, roles, ACLs). Both are separate steps: first authenticate, then authorize.",
+    "question_ar": "اشرح المصادقة (authentication) مقابل التفويض (authorization).",
+    "answer_ar": "المصادقة تتحقق من هوية المستخدم أو الخدمة (مثل تسجيل الدخول باسم مستخدم وكلمة مرور أو باستخدام توكنات). التفويض يحدد ما الذي يحق للكيان المصادق القيام به (أذونات، أدوار، قوائم تحكم الوصول). العمليتان منفصلتان: أولًا المصادقة ثم التفويض."
+  },
+  {
+    "id": 6,
+    "question_en": "What is a JWT and how is it typically used?",
+    "answer_en": "A JWT (JSON Web Token) is a compact, URL-safe token format for representing claims between parties. Commonly used as stateless access tokens: the server issues a signed JWT to the client after authentication; the client sends it with requests (Authorization header). Validate signature and expiry on the server.\n\nNote: JWT is a token format — authentication protocols (like OAuth2/OpenID Connect) define how tokens are obtained and managed.",
+    "question_ar": "ما هو JWT وكيف يُستخدم عادةً؟",
+    "answer_ar": "JWT (JSON Web Token) هو صيغة توكن مضغوطة وآمنة للاستخدام في عناوين URL لتمثيل مطالبات بين جهات. يُستخدم عادة كتوكين وصول بلا حالة: يصدر الخادم JWT موقعًا بعد المصادقة؛ يرسله العميل مع الطلبات (Authorization header). على الخادم التحقق من التوقيع وانتهاء الصلاحية.\n\nملاحظة: JWT هو صيغة توكن — بروتوكولات المصادقة مثل OAuth2/ OpenID Connect تحدد كيفية الحصول على هذه التوكنات وإدارتها."
+  },
+  {
+    "id": 7,
+    "question_en": "What is OAuth and how does it differ from JWT?",
+    "answer_en": "OAuth 2.0 is an authorization framework that defines flows for granting delegated access to resources (e.g., 'allow this app to access my data'). JWT is a token format and may be used inside OAuth as the access token format. OAuth defines how tokens are obtained/refresh, while JWT only defines the token structure.",
+    "question_ar": "ما هو OAuth وكيف يختلف عن JWT؟",
+    "answer_ar": "OAuth 2.0 هو إطار عمل للتفويض يحدد تدفقات منح الوصول المفوض للموارد (مثل السماح لتطبيق بالوصول إلى بياناتي). JWT هي صيغة توكن ويمكن استخدامها داخل OAuth كتوكين وصول. OAuth يحدد كيفية الحصول على التوكنات وتجديدها، بينما JWT يحدد فقط شكل التوكن."
+  },
+  {
+    "id": 8,
+    "question_en": "Explain SQL vs NoSQL — when to choose each.",
+    "answer_en": "SQL (relational) databases use schemas, tables, and support complex transactions — good for structured data and strong consistency (ACID). NoSQL includes document, key-value, column, and graph stores; they provide flexible schemas and better horizontal scaling, often with eventual consistency (BASE). Choose SQL for transactional systems (banking, inventory), NoSQL for highly scalable, schema-flexible use cases (logs, user sessions, large-scale analytics).",
+    "question_ar": "اشرح الفرق بين SQL وNoSQL — ومتى تختار كلًا منهما؟",
+    "answer_ar": "قواعد بيانات SQL (العلاقاتية) تستخدم مخططات وجداول وتدعم معاملات معقدة — مناسبة للبيانات المهيكلة والثبات القوي (ACID). NoSQL يشمل مخازن المستندات، المفتاح-القيمة، الأعمدة، والرسوم؛ يوفر مخططات مرنة وقدرة أفضل على التوسع أفقياً غالبًا مع اتساق نهائي (BASE). اختر SQL للأنظمة المعاملية (بنوك، مخزون)، وNoSQL للحالات القابلة للتوسع والمرونة في المخطط (سجلات، جلسات مستخدمين، تحليلات واسعة النطاق)."
+  },
+  {
+    "id": 9,
+    "question_en": "What are ACID and BASE models in databases?",
+    "answer_en": "ACID (Atomicity, Consistency, Isolation, Durability) defines strong transactional guarantees in relational databases. BASE (Basically Available, Soft state, Eventual consistency) characterizes many NoSQL systems that trade strict consistency for availability and partition tolerance. The choice depends on application requirements for consistency versus scalability and availability.",
+    "question_ar": "ما هما نموذجَا ACID وBASE في قواعد البيانات؟",
+    "answer_ar": "ACID (الذرية، التناسق، العزل، الديمومة) يوفّر ضمانات معاملات قوية في قواعد البيانات العلائقية. BASE (التوافر الأساسي، حالة رخوة، اتساق نهائي) يصف أنظمة NoSQL التي تتخلّى عن الاتساق الصارم لصالح التوافر والتحمّل في حال الانقسام. الاختيار يعتمد على متطلبات التطبيق من حيث الاتساق مقابل القابلية للتوسع والتوافر."
+  },
+  {
+    "id": 10,
+    "question_en": "What is indexing in databases and why is it important?",
+    "answer_en": "An index is a data structure (like B-tree or hash) that speeds up lookups on columns. Indexes reduce query time but add cost to writes and storage. Use indexes on columns used in WHERE, JOIN, ORDER BY, but avoid over-indexing and consider composite and covering indexes for common queries.",
+    "question_ar": "ما هو الفهرسة (indexing) في قواعد البيانات ولماذا هي مهمة؟",
+    "answer_ar": "الفهرسة هي بنية بيانات (مثل شجرة B أو هش) تُسرّع عمليات البحث على أعمدة معينة. تقلّل الفهارس زمن الاستعلام لكنها تزيد تكلفة عمليات الكتابة ومساحة التخزين. ضع فهارس على الأعمدة المستخدمة في WHERE، JOIN، ORDER BY، وتجنّب الإفراط في الفهرسة وفكّر في الفهارس المركبة والتغطوية للاستعلامات الشائعة."
+  },
+  {
+    "id": 11,
+    "question_en": "Explain transactions and isolation levels.",
+    "answer_en": "A transaction is a sequence of DB operations treated as a single unit (commit or rollback). Isolation levels (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE) control visibility of concurrent transactions and trade performance for stricter guarantees. Choose isolation based on need to avoid phenomena like dirty reads, non-repeatable reads, and phantom reads.",
+    "question_ar": "اشرح المعاملات (transactions) ومستويات العزل (isolation levels).",
+    "answer_ar": "المعاملة هي سلسلة عمليات قاعدة بيانات تُعامل كوحدة واحدة (تُثبّت أو تُلغى). مستويات العزل (READ UNCOMMITTED، READ COMMITTED، REPEATABLE READ، SERIALIZABLE) تتحكم بظهور نتائج المعاملات المتزامنة وتوازن الأداء مقابل ضمانات أقوى. اختر المستوى المناسب لتجنّب ظواهر مثل القراءات القذرة، القراءات غير المتكررة، وظهور الصفوف الجديدة."
+  },
+  {
+    "id": 12,
+    "question_en": "What is caching and where do you place caches in a backend architecture?",
+    "answer_en": "Caching stores frequently-read data close to clients or services to reduce latency and load. Common layers: CDN (edge caching for static assets), application-level cache (in-memory like Redis or Memcached for DB query results, sessions), and HTTP caching (Cache-Control headers). Design cache invalidation carefully to avoid stale data.",
+    "question_ar": "ما هو التخزين المؤقت (caching) وأين تضع الكاش في بنية الخادم؟",
+    "answer_ar": "التخزين المؤقت يخزن البيانات التي يُقرأ منها كثيرًا بالقرب من العملاء أو الخدمات لتقليل الكمون والتحميل. الطبقات الشائعة: CDN لتخزين الأصول الثابتة على الحافة، كاش على مستوى التطبيق (ذاكرة داخلية مثل Redis أو Memcached لنتائج الاستعلام والجلسات)، وتخزين مؤقت عبر HTTP (رؤوس Cache-Control). صمّم آليات إلغاء الصلاحية بعناية لتجنّب البيانات القديمة."
+  },
+  {
+    "id": 13,
+    "question_en": "What are message queues and when do you use them (e.g., RabbitMQ, Kafka)?",
+    "answer_en": "Message queues decouple producers and consumers and enable asynchronous processing, retry logic, and buffering. Use them for background jobs, event-driven architectures, and smoothing traffic spikes. RabbitMQ is a general-purpose message broker with complex routing; Kafka is designed for high-throughput, distributed commit-log streaming and event streaming use cases.",
+    "question_ar": "ما هي قوائم الرسائل (message queues) ومتى تستخدمها (مثل RabbitMQ، Kafka)؟",
+    "answer_ar": "قوائم الرسائل تفصل المنتجين عن المستهلكين وتمكّن المعالجة غير المتزامنة، منطق إعادة المحاولة، وتنعيم ذروة الحمل. استخدمها للمهام الخلفية، هندسات الحدث، ومعالجة تدفّقات المرور. RabbitMQ وساطة رسائل عامة مع توجيه معقّد؛ Kafka مصمّم لتدفّق عالي الإنتاجية كسجل التزام موزّع وحالات بثّ الأحداث."
+  },
+  {
+    "id": 14,
+    "question_en": "What is the CAP theorem?",
+    "answer_en": "CAP theorem states that in a distributed system you can have at most two of: Consistency, Availability, and Partition tolerance. In presence of network partitions, systems choose between consistency and availability. Understanding CAP helps design distributed storage and caching systems.",
+    "question_ar": "ما هو مبرهنة CAP؟",
+    "answer_ar": "مبرهنة CAP تقول إنه في نظام موزّع يمكنك الحصول على اثنين فقط من الخصائص الثلاث: الاتساق (Consistency)، التوافر (Availability)، وتحمل الانقسام الشبكي (Partition tolerance). عند حدوث انقسام في الشبكة، تختار الأنظمة بين الاتساق والتوافر. فهم CAP يساعد في تصميم نظم تخزين وتخزين مؤقت موزّعة."
+  },
+  {
+    "id": 15,
+    "question_en": "How do you secure APIs — basic best practices?",
+    "answer_en": "API security basics: use HTTPS everywhere, authenticate requests (tokens/OAuth), validate and sanitize inputs to prevent injection, enforce authorization checks server-side, apply rate limiting and throttling, log and monitor suspicious activity, and follow OWASP API Security recommendations. Keep secrets out of code and rotate keys regularly.",
+    "question_ar": "كيف تؤمّن واجهات الـ API — ممارسات أساسية؟",
+    "answer_ar": "أساسيات تأمين API: استخدم HTTPS دائمًا، صادِق الطلبات (توكنات/OAuth)، تحقق ونقّح المدخلات لمنع الحقن، نفّذ فحوص التفويض على الخادم، ضع حدودًا لمعدّل الطلبات (rate limiting)، سجّل وراقب الأنشطة المشبوهة، واتبع توصيات OWASP لأمن الـ API. احتفظ بالأسرار خارج الكود ودوّر المفاتيح بانتظام."
+  },
+  {
+    "id": 16,
+    "question_en": "What is rate limiting and why is it important?",
+    "answer_en": "Rate limiting restricts the number of requests a client can make in a time window to prevent abuse, DoS, and fair resource usage. Implementations: token bucket, leaky bucket, fixed window. Apply at API gateway, load balancer, or application layer depending on requirements.",
+    "question_ar": "ما هو تحديد المعدل (rate limiting) ولماذا هو مهم؟",
+    "answer_ar": "تحديد المعدل يقيّد عدد الطلبات التي يمكن للعميل إجراؤها خلال نافذة زمنية لمنع الإساءة، هجمات إنكار الخدمة، وضمان استخدام عادل للموارد. طرق التنفيذ: token bucket، leaky bucket، fixed window. طبّقه عند بوابة الـ API، موازن التحميل، أو طبقة التطبيق حسب الحاجة."
+  },
+  {
+    "id": 17,
+    "question_en": "What is pagination and what strategies exist for backend APIs?",
+    "answer_en": "Pagination breaks large result sets into pages. Strategies: offset-based (page & limit) simple but fragile with frequently-changing data; cursor-based (seek pagination) using opaque cursors or sort keys for stable, efficient pagination in large datasets; keyset pagination for high performance. Choose based on data size and consistency needs.",
+    "question_ar": "ما هو التجزئة (pagination) وما هي استراتيجياته في واجهات الـ API؟",
+    "answer_ar": "التجزئة تقسم مجموعات النتائج الكبيرة إلى صفحات. الاستراتيجيات: التجزئة بنظام الإزاحة (offset & limit) بسيطة لكنها قد تكون هشة مع بيانات متغيرة؛ التجزئة بالموشر (cursor-based) تستخدم موشرات غير ظاهرة أو مفاتيح ترتيب لتقديم تجزئة مستقرة وفعّالة للمجموعات الكبيرة؛ keyset pagination لأداء عالي. اختر الاستراتيجية حسب حجم البيانات واحتياجات الاتساق."
+  },
+  {
+    "id": 18,
+    "question_en": "What is horizontal vs vertical scaling?",
+    "answer_en": "Vertical scaling (scale-up) means increasing resources of a single server (CPU, RAM). Horizontal scaling (scale-out) means adding more machines/instances to distribute load. Horizontal scaling often provides better fault tolerance and near-unlimited capacity if the architecture supports it (stateless services, shared storage or partitioning).",
+    "question_ar": "ما الفرق بين التوسيع الأفقي (horizontal) والرأسي (vertical)؟",
+    "answer_ar": "التوسيع الرأسي يعني زيادة موارد جهاز واحد (CPU، RAM). التوسيع الأفقي يعني إضافة آلات/حالات أكثر لتوزيع الحمل. التوسيع الأفقي يوفر عادة متانة أفضل وقدرة غير محدودة تقريبًا إذا كانت البنية تدعمه (خدمات بلا حالة، تخزين مشترك أو تقسيم البيانات)."
+  },
+  {
+    "id": 19,
+    "question_en": "Why use containers (Docker) and orchestration (Kubernetes)?",
+    "answer_en": "Containers (Docker) package apps and dependencies into portable, reproducible units enabling consistent environments across dev/stage/prod. Orchestration (Kubernetes) manages deployment, scaling, service discovery, and self-healing of many containers in production. Together they improve portability, scaling, and operational automation.",
+    "question_ar": "لماذا نستخدم الحاويات (Docker) والتنسيق (Kubernetes)؟",
+    "answer_ar": "الحاويات تعبّئ التطبيقات واعتمادياتها كوحدات محمولة وقابلة لإعادة الإنتاج ما يضمن بيئات متسقة عبر التطوير والاختبار والإنتاج. التنسيق مثل Kubernetes يدير النشر، التوسيع، اكتشاف الخدمات، والتعافي الذاتي للعديد من الحاويات في الإنتاج. معًا يحسّنان النقلية، التوسّع، وأتمتة العمليات."
+  },
+  {
+    "id": 20,
+    "question_en": "How do you monitor and log backend systems effectively?",
+    "answer_en": "Good monitoring/logging: centralized logs (ELK/EFK), structured logging, distributed tracing (OpenTelemetry, Jaeger), metrics collection (Prometheus + Grafana), alerting on SLO/SLI breaches, and health checks. Correlate logs, traces, and metrics to speed diagnosis.",
+    "question_ar": "كيف تراقب وتسجل أنظمة الخادم بفاعلية؟",
+    "answer_ar": "ممارسات المراقبة والتسجيل الجيدة: سجلات مركزية (ELK/EFK)، تسجيل مهيكل، تتبّع موزّع (OpenTelemetry، Jaeger)، جمع مقاييس (Prometheus + Grafana)، تنبيهات على خروقات SLO/SLI، وفحوص صحة. اربط السجلات والتتبّعات والمقاييس لتسريع التشخيص."
+  },
+  {
+    "id": 21,
+    "question_en": "What is database migration and best practices?",
+    "answer_en": "Migrations are versioned changes to schema and related data transformations. Best practices: keep migrations idempotent and reversible when possible, automate migrations in CI/CD, test on staging with production-like data, backup before destructive migrations, and use feature flags to decouple deploy from release.",
+    "question_ar": "ما هي هجرات قاعدة البيانات (migrations) وأفضل الممارسات؟",
+    "answer_ar": "الهجرات هي تغييرات مرقّمة على المخطط وتحويلاً للبيانات ذات الصلة. أفضل الممارسات: اجعل الهجرات قابلة للتكرار وآمنة عند الإمكان، أتمتة الهجرات في CI/CD، اختبارها على بيئة staging شبيهة بالإنتاج، عمل نسخ احتياطية قبل الهجرات المدمرة، واستخدام feature flags لفصل النشر عن الإصدار."
+  },
+  {
+    "id": 22,
+    "question_en": "What are common backend interview topics you should prepare for?",
+    "answer_en": "Prepare for: HTTP and REST principles, authentication/authorization (JWT, OAuth), data modeling and indexing, SQL queries and transactions, caching strategies (Redis, CDN), message queues, scaling patterns, security basics (OWASP), containerization and CI/CD, monitoring and debugging, and system design basics for distributed systems.",
+    "question_ar": "ما هي موضوعات المقابلات الشائعة في الباك-إند التي يجب التحضير لها؟",
+    "answer_ar": "حضّر في المواضيع التالية: مبادئ HTTP وREST، المصادقة/التفويض (JWT، OAuth)، نمذجة البيانات والفهرسة، استعلامات SQL والمعاملات، استراتيجيات الكاش (Redis، CDN)، قوائم الرسائل، أنماط التوسيع، أساسيات الأمن (OWASP)، الحاويات وCI/CD، المراقبة وتصحيح الأخطاء، وتصميم أنظمة موزّعة."
+  }
+]

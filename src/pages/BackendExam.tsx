@@ -40,7 +40,7 @@ const BackendExam: React.FC = () => {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/src/data/backend_exam.json');
+        const response = await fetch('/data/backend_exam.json');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {

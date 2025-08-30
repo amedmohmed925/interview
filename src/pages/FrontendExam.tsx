@@ -40,7 +40,7 @@ const FrontendExam: React.FC = () => {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/src/data/frontend_exam.json');
+        const response = await fetch('/data/frontend_exam.json');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {

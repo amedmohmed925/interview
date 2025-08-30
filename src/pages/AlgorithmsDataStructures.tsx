@@ -29,7 +29,7 @@ const AlgorithmsDataStructures: React.FC = () => {
   React.useEffect(() => {
     const fetchProblems = async () => {
       try {
-        const res = await fetch('/src/data/algorithms_data_structures.json');
+        const res = await fetch('/data/algorithms_data_structures.json');
         const data = await res.json();
         setProblems(data);
       } catch (err) {

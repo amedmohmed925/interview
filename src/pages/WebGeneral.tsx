@@ -20,7 +20,7 @@ const WebGeneral: React.FC = () => {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/src/data/web_general.json');
+        const response = await fetch('/data/web_general.json');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {

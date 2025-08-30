@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "type": "true_false",
+    "question_en": "Node.js is built on Chrome's V8 JavaScript engine.",
+    "question_ar": "Node.js مبني على محرك JavaScript V8 من Chrome.",
+    "correct_answer": true,
+    "explanation_en": "Node.js is indeed built on Chrome's V8 JavaScript engine, which compiles JavaScript to machine code.",
+    "explanation_ar": "Node.js مبني فعلاً على محرك JavaScript V8 من Chrome، والذي يترجم JavaScript إلى كود الآلة."
+  },
+  {
+    "id": 2,
+    "type": "multiple_choice",
+    "question_en": "Which HTTP status code indicates a successful request?",
+    "question_ar": "أي رمز حالة HTTP يشير إلى طلب ناجح؟",
+    "options_en": ["200", "404", "500", "301"],
+    "options_ar": ["200", "404", "500", "301"],
+    "correct_answer": 0,
+    "explanation_en": "HTTP status code 200 indicates that the request was successful.",
+    "explanation_ar": "رمز حالة HTTP 200 يشير إلى أن الطلب كان ناجحاً."
+  },
+  {
+    "id": 3,
+    "type": "true_false",
+    "question_en": "SQL databases are always better than NoSQL databases.",
+    "question_ar": "قواعد بيانات SQL دائماً أفضل من قواعد بيانات NoSQL.",
+    "correct_answer": false,
+    "explanation_en": "Neither is universally better; the choice depends on specific use cases, data structure, and scalability requirements.",
+    "explanation_ar": "لا يوجد أفضل عالمياً؛ الاختيار يعتمد على حالات الاستخدام المحددة وهيكل البيانات ومتطلبات التوسع."
+  },
+  {
+    "id": 4,
+    "type": "multiple_choice",
+    "question_en": "What does REST stand for?",
+    "question_ar": "ماذا يعني REST؟",
+    "options_en": ["Representational State Transfer", "Remote State Technology", "Relational State Transfer", "Responsive State Template"],
+    "options_ar": ["نقل الحالة التمثيلية", "تقنية الحالة البعيدة", "نقل الحالة العلائقية", "قالب الحالة المتجاوبة"],
+    "correct_answer": 0,
+    "explanation_en": "REST stands for Representational State Transfer, an architectural style for web services.",
+    "explanation_ar": "REST يعني نقل الحالة التمثيلية، وهو نمط معماري لخدمات الويب."
+  },
+  {
+    "id": 5,
+    "type": "true_false",
+    "question_en": "MongoDB is a relational database management system.",
+    "question_ar": "MongoDB هو نظام إدارة قواعد بيانات علائقية.",
+    "correct_answer": false,
+    "explanation_en": "MongoDB is a NoSQL document database, not a relational database.",
+    "explanation_ar": "MongoDB هو قاعدة بيانات وثائق NoSQL، وليس قاعدة بيانات علائقية."
+  },
+  {
+    "id": 6,
+    "type": "multiple_choice",
+    "question_en": "Which HTTP method is typically used to create new resources?",
+    "question_ar": "أي طريقة HTTP تُستخدم عادة لإنشاء موارد جديدة؟",
+    "options_en": ["GET", "POST", "PUT", "DELETE"],
+    "options_ar": ["GET", "POST", "PUT", "DELETE"],
+    "correct_answer": 1,
+    "explanation_en": "POST is typically used to create new resources on the server.",
+    "explanation_ar": "POST تُستخدم عادة لإنشاء موارد جديدة على الخادم."
+  },
+  {
+    "id": 7,
+    "type": "true_false",
+    "question_en": "Express.js is a web framework for Node.js.",
+    "question_ar": "Express.js هو إطار عمل ويب لـ Node.js.",
+    "correct_answer": true,
+    "explanation_en": "Express.js is indeed a minimal and flexible Node.js web application framework.",
+    "explanation_ar": "Express.js هو فعلاً إطار عمل تطبيق ويب Node.js مرن وبسيط."
+  },
+  {
+    "id": 8,
+    "type": "multiple_choice",
+    "question_en": "What does ACID stand for in database terminology?",
+    "question_ar": "ماذا يعني ACID في مصطلحات قواعد البيانات؟",
+    "options_en": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Integration, Data", "Automatic, Consistent, Integrated, Distributed", "Advanced, Centralized, Indexed, Dynamic"],
+    "options_ar": ["الذرية، الاتساق، العزل، الديمومة", "الوصول، التحكم، التكامل، البيانات", "تلقائي، متسق، متكامل، موزع", "متقدم، مركزي، مفهرس، ديناميكي"],
+    "correct_answer": 0,
+    "explanation_en": "ACID stands for Atomicity, Consistency, Isolation, and Durability - key properties of database transactions.",
+    "explanation_ar": "ACID يعني الذرية والاتساق والعزل والديمومة - الخصائص الأساسية لمعاملات قواعد البيانات."
+  },
+  {
+    "id": 9,
+    "type": "true_false",
+    "question_en": "JSON stands for JavaScript Object Notation.",
+    "question_ar": "JSON يعني ترميز كائن JavaScript.",
+    "correct_answer": true,
+    "explanation_en": "JSON indeed stands for JavaScript Object Notation, a lightweight data interchange format.",
+    "explanation_ar": "JSON يعني فعلاً ترميز كائن JavaScript، وهو تنسيق تبادل بيانات خفيف الوزن."
+  },
+  {
+    "id": 10,
+    "type": "multiple_choice",
+    "question_en": "Which database type is MongoDB?",
+    "question_ar": "أي نوع قاعدة بيانات هو MongoDB؟",
+    "options_en": ["Relational", "Document", "Key-Value", "Graph"],
+    "options_ar": ["علائقية", "وثائق", "مفتاح-قيمة", "رسم بياني"],
+    "correct_answer": 1,
+    "explanation_en": "MongoDB is a document-oriented NoSQL database that stores data in BSON format.",
+    "explanation_ar": "MongoDB هو قاعدة بيانات NoSQL موجهة للوثائق تخزن البيانات بتنسيق BSON."
+  },
+  {
+    "id": 11,
+    "type": "true_false",
+    "question_en": "API stands for Application Programming Interface.",
+    "question_ar": "API يعني واجهة برمجة التطبيقات.",
+    "correct_answer": true,
+    "explanation_en": "API indeed stands for Application Programming Interface, defining how software components interact.",
+    "explanation_ar": "API يعني فعلاً واجهة برمجة التطبيقات، يحدد كيفية تفاعل مكونات البرمجيات."
+  },
+  {
+    "id": 12,
+    "type": "multiple_choice",
+    "question_en": "Which HTTP status code indicates 'Not Found'?",
+    "question_ar": "أي رمز حالة HTTP يشير إلى 'غير موجود'؟",
+    "options_en": ["400", "401", "404", "500"],
+    "options_ar": ["400", "401", "404", "500"],
+    "correct_answer": 2,
+    "explanation_en": "HTTP status code 404 indicates that the requested resource was not found on the server.",
+    "explanation_ar": "رمز حالة HTTP 404 يشير إلى أن المورد المطلوب لم يتم العثور عليه على الخادم."
+  },
+  {
+    "id": 13,
+    "type": "true_false",
+    "question_en": "GraphQL can only be used with specific databases.",
+    "question_ar": "GraphQL يمكن استخدامه فقط مع قواعد بيانات محددة.",
+    "correct_answer": false,
+    "explanation_en": "GraphQL is database-agnostic and can work with any database or data source.",
+    "explanation_ar": "GraphQL مستقل عن قاعدة البيانات ويمكن أن يعمل مع أي قاعدة بيانات أو مصدر بيانات."
+  },
+  {
+    "id": 14,
+    "type": "multiple_choice",
+    "question_en": "What is the primary purpose of middleware in Express.js?",
+    "question_ar": "ما هو الغرض الأساسي من middleware في Express.js؟",
+    "options_en": ["Database connection", "Request/Response processing", "File compression", "User authentication only"],
+    "options_ar": ["اتصال قاعدة البيانات", "معالجة الطلب/الاستجابة", "ضغط الملفات", "مصادقة المستخدم فقط"],
+    "correct_answer": 1,
+    "explanation_en": "Middleware functions execute during the request-response cycle and can modify requests, responses, or end the cycle.",
+    "explanation_ar": "دوال Middleware تنفذ أثناء دورة الطلب-الاستجابة ويمكنها تعديل الطلبات أو الاستجابات أو إنهاء الدورة."
+  },
+  {
+    "id": 15,
+    "type": "true_false",
+    "question_en": "PostgreSQL supports both SQL and NoSQL features.",
+    "question_ar": "PostgreSQL يدعم ميزات SQL وNoSQL معاً.",
+    "correct_answer": true,
+    "explanation_en": "PostgreSQL supports traditional relational features plus JSON/JSONB data types for document-style storage.",
+    "explanation_ar": "PostgreSQL يدعم الميزات العلائقية التقليدية بالإضافة إلى أنواع بيانات JSON/JSONB للتخزين بنمط الوثائق."
+  },
+  {
+    "id": 16,
+    "type": "multiple_choice",
+    "question_en": "Which authentication method uses tokens?",
+    "question_ar": "أي طريقة مصادقة تستخدم الرموز المميزة؟",
+    "options_en": ["Session-based", "JWT", "Basic Auth", "OAuth only"],
+    "options_ar": ["قائمة على الجلسة", "JWT", "المصادقة الأساسية", "OAuth فقط"],
+    "correct_answer": 1,
+    "explanation_en": "JWT (JSON Web Tokens) is a token-based authentication method that's stateless and scalable.",
+    "explanation_ar": "JWT (رموز الويب JSON) هي طريقة مصادقة قائمة على الرموز المميزة وهي عديمة الحالة وقابلة للتوسع."
+  },
+  {
+    "id": 17,
+    "type": "true_false",
+    "question_en": "Redis is primarily used as a caching solution.",
+    "question_ar": "Redis يُستخدم بشكل أساسي كحل تخزين مؤقت.",
+    "correct_answer": true,
+    "explanation_en": "Redis is an in-memory data structure store commonly used for caching, though it has other uses too.",
+    "explanation_ar": "Redis هو مخزن هيكل بيانات في الذاكرة يُستخدم عادة للتخزين المؤقت، رغم أن له استخدامات أخرى أيضاً."
+  },
+  {
+    "id": 18,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of environment variables?",
+    "question_ar": "ما هو الغرض من متغيرات البيئة؟",
+    "options_en": ["Store configuration", "Improve performance", "Handle errors", "Manage dependencies"],
+    "options_ar": ["تخزين التكوين", "تحسين الأداء", "معالجة الأخطاء", "إدارة التبعيات"],
+    "correct_answer": 0,
+    "explanation_en": "Environment variables store configuration data that can vary between different deployment environments.",
+    "explanation_ar": "متغيرات البيئة تخزن بيانات التكوين التي يمكن أن تختلف بين بيئات النشر المختلفة."
+  },
+  {
+    "id": 19,
+    "type": "true_false",
+    "question_en": "Docker containers share the host operating system kernel.",
+    "question_ar": "حاويات Docker تشارك نواة نظام التشغيل المضيف.",
+    "correct_answer": true,
+    "explanation_en": "Docker containers share the host OS kernel, making them more lightweight than virtual machines.",
+    "explanation_ar": "حاويات Docker تشارك نواة نظام التشغيل المضيف، مما يجعلها أخف وزناً من الآلات الافتراضية."
+  },
+  {
+    "id": 20,
+    "type": "multiple_choice",
+    "question_en": "Which database operation is used to retrieve data?",
+    "question_ar": "أي عملية قاعدة بيانات تُستخدم لاسترجاع البيانات؟",
+    "options_en": ["INSERT", "SELECT", "UPDATE", "DELETE"],
+    "options_ar": ["INSERT", "SELECT", "UPDATE", "DELETE"],
+    "correct_answer": 1,
+    "explanation_en": "SELECT is the SQL command used to retrieve data from database tables.",
+    "explanation_ar": "SELECT هو أمر SQL المستخدم لاسترجاع البيانات من جداول قاعدة البيانات."
+  },
+  {
+    "id": 21,
+    "type": "true_false",
+    "question_en": "Microservices architecture always improves application performance.",
+    "question_ar": "بنية الخدمات الميكروية تحسن دائماً أداء التطبيق.",
+    "correct_answer": false,
+    "explanation_en": "Microservices can improve scalability and maintainability but may introduce network overhead and complexity.",
+    "explanation_ar": "الخدمات الميكروية يمكن أن تحسن قابلية التوسع والصيانة لكن قد تقدم أعباء شبكة وتعقيد."
+  },
+  {
+    "id": 22,
+    "type": "multiple_choice",
+    "question_en": "What is the default port for HTTP?",
+    "question_ar": "ما هو المنفذ الافتراضي لـ HTTP؟",
+    "options_en": ["80", "443", "8080", "3000"],
+    "options_ar": ["80", "443", "8080", "3000"],
+    "correct_answer": 0,
+    "explanation_en": "Port 80 is the default port for HTTP traffic.",
+    "explanation_ar": "المنفذ 80 هو المنفذ الافتراضي لحركة HTTP."
+  },
+  {
+    "id": 23,
+    "type": "true_false",
+    "question_en": "Load balancing can only be implemented at the hardware level.",
+    "question_ar": "توزيع الأحمال يمكن تنفيذه فقط على مستوى الأجهزة.",
+    "correct_answer": false,
+    "explanation_en": "Load balancing can be implemented at hardware, software, or cloud service levels.",
+    "explanation_ar": "توزيع الأحمال يمكن تنفيذه على مستوى الأجهزة أو البرمجيات أو خدمات السحابة."
+  },
+  {
+    "id": 24,
+    "type": "multiple_choice",
+    "question_en": "Which protocol is used for secure HTTP communication?",
+    "question_ar": "أي بروتوكول يُستخدم للتواصل الآمن عبر HTTP؟",
+    "options_en": ["HTTP", "HTTPS", "FTP", "SSH"],
+    "options_ar": ["HTTP", "HTTPS", "FTP", "SSH"],
+    "correct_answer": 1,
+    "explanation_en": "HTTPS (HTTP Secure) uses SSL/TLS encryption for secure communication.",
+    "explanation_ar": "HTTPS (HTTP الآمن) يستخدم تشفير SSL/TLS للتواصل الآمن."
+  },
+  {
+    "id": 25,
+    "type": "true_false",
+    "question_en": "Caching can significantly improve application performance.",
+    "question_ar": "التخزين المؤقت يمكن أن يحسن أداء التطبيق بشكل كبير.",
+    "correct_answer": true,
+    "explanation_en": "Caching reduces database queries and network requests, significantly improving response times.",
+    "explanation_ar": "التخزين المؤقت يقلل استعلامات قاعدة البيانات وطلبات الشبكة، مما يحسن أوقات الاستجابة بشكل كبير."
+  },
+  {
+    "id": 26,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of indexing in databases?",
+    "question_ar": "ما هو الغرض من الفهرسة في قواعد البيانات؟",
+    "options_en": ["Data encryption", "Query optimization", "Data compression", "Backup creation"],
+    "options_ar": ["تشفير البيانات", "تحسين الاستعلام", "ضغط البيانات", "إنشاء نسخ احتياطية"],
+    "correct_answer": 1,
+    "explanation_en": "Database indexing improves query performance by creating efficient data access paths.",
+    "explanation_ar": "فهرسة قاعدة البيانات تحسن أداء الاستعلام بإنشاء مسارات وصول بيانات فعالة."
+  },
+  {
+    "id": 27,
+    "type": "true_false",
+    "question_en": "WebSockets provide full-duplex communication between client and server.",
+    "question_ar": "WebSockets توفر تواصل مزدوج كامل بين العميل والخادم.",
+    "correct_answer": true,
+    "explanation_en": "WebSockets enable real-time, bidirectional communication between client and server.",
+    "explanation_ar": "WebSockets تمكن التواصل في الوقت الفعلي ثنائي الاتجاه بين العميل والخادم."
+  },
+  {
+    "id": 28,
+    "type": "multiple_choice",
+    "question_en": "Which HTTP method is idempotent?",
+    "question_ar": "أي طريقة HTTP هي idempotent؟",
+    "options_en": ["POST", "GET", "PATCH", "All of the above"],
+    "options_ar": ["POST", "GET", "PATCH", "جميع ما سبق"],
+    "correct_answer": 1,
+    "explanation_en": "GET is idempotent, meaning multiple identical requests have the same effect as a single request.",
+    "explanation_ar": "GET هي idempotent، مما يعني أن طلبات متعددة متطابقة لها نفس تأثير طلب واحد."
+  },
+  {
+    "id": 29,
+    "type": "true_false",
+    "question_en": "SQL injection attacks can be prevented using parameterized queries.",
+    "question_ar": "هجمات حقن SQL يمكن منعها باستخدام الاستعلامات المعاملة.",
+    "correct_answer": true,
+    "explanation_en": "Parameterized queries (prepared statements) are an effective defense against SQL injection attacks.",
+    "explanation_ar": "الاستعلامات المعاملة (البيانات المحضرة) هي دفاع فعال ضد هجمات حقن SQL."
+  },
+  {
+    "id": 30,
+    "type": "multiple_choice",
+    "question_en": "What does ORM stand for?",
+    "question_ar": "ماذا يعني ORM؟",
+    "options_en": ["Object Relational Mapping", "Online Resource Management", "Operational Risk Management", "Optimized Response Method"],
+    "options_ar": ["تخطيط كائني علائقي", "إدارة الموارد عبر الإنترنت", "إدارة المخاطر التشغيلية", "طريقة الاستجابة المحسنة"],
+    "correct_answer": 0,
+    "explanation_en": "ORM stands for Object Relational Mapping, a technique for converting data between incompatible systems.",
+    "explanation_ar": "ORM يعني التخطيط الكائني العلائقي، تقنية لتحويل البيانات بين الأنظمة غير المتوافقة."
+  },
+  {
+    "id": 31,
+    "type": "true_false",
+    "question_en": "CORS stands for Cross-Origin Resource Sharing.",
+    "question_ar": "CORS يعني مشاركة الموارد عبر المصادر.",
+    "correct_answer": true,
+    "explanation_en": "CORS indeed stands for Cross-Origin Resource Sharing, a security feature implemented by browsers.",
+    "explanation_ar": "CORS يعني فعلاً مشاركة الموارد عبر المصادر، ميزة أمان ينفذها المتصفحات."
+  },
+  {
+    "id": 32,
+    "type": "multiple_choice",
+    "question_en": "Which database relationship type connects one record to many records?",
+    "question_ar": "أي نوع علاقة قاعدة بيانات يربط سجل واحد بسجلات متعددة؟",
+    "options_en": ["One-to-One", "One-to-Many", "Many-to-Many", "Self-referencing"],
+    "options_ar": ["واحد إلى واحد", "واحد إلى متعدد", "متعدد إلى متعدد", "مرجع ذاتي"],
+    "correct_answer": 1,
+    "explanation_en": "One-to-Many relationship connects a single record in one table to multiple records in another table.",
+    "explanation_ar": "علاقة واحد إلى متعدد تربط سجل واحد في جدول بسجلات متعددة في جدول آخر."
+  },
+  {
+    "id": 33,
+    "type": "true_false",
+    "question_en": "RESTful APIs must always return JSON data.",
+    "question_ar": "APIs RESTful يجب أن ترجع دائماً بيانات JSON.",
+    "correct_answer": false,
+    "explanation_en": "RESTful APIs can return various data formats including JSON, XML, HTML, or plain text.",
+    "explanation_ar": "APIs RESTful يمكن أن ترجع تنسيقات بيانات مختلفة بما في ذلك JSON وXML وHTML أو نص عادي."
+  },
+  {
+    "id": 34,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of a reverse proxy?",
+    "question_ar": "ما هو الغرض من البروكسي العكسي؟",
+    "options_en": ["Hide client identity", "Load balancing and caching", "Data encryption", "User authentication"],
+    "options_ar": ["إخفاء هوية العميل", "توزيع الأحمال والتخزين المؤقت", "تشفير البيانات", "مصادقة المستخدم"],
+    "correct_answer": 1,
+    "explanation_en": "A reverse proxy sits between clients and servers, providing load balancing, caching, and SSL termination.",
+    "explanation_ar": "البروكسي العكسي يقع بين العملاء والخوادم، يوفر توزيع الأحمال والتخزين المؤقت وإنهاء SSL."
+  },
+  {
+    "id": 35,
+    "type": "true_false",
+    "question_en": "Database normalization always improves query performance.",
+    "question_ar": "تطبيع قاعدة البيانات يحسن دائماً أداء الاستعلام.",
+    "correct_answer": false,
+    "explanation_en": "While normalization reduces redundancy, it can sometimes slow queries due to increased joins.",
+    "explanation_ar": "بينما يقلل التطبيع من التكرار، يمكن أحياناً أن يبطئ الاستعلامات بسبب زيادة الربط."
+  },
+  {
+    "id": 36,
+    "type": "multiple_choice",
+    "question_en": "Which Node.js module is used for file system operations?",
+    "question_ar": "أي وحدة Node.js تُستخدم لعمليات نظام الملفات؟",
+    "options_en": ["http", "fs", "path", "url"],
+    "options_ar": ["http", "fs", "path", "url"],
+    "correct_answer": 1,
+    "explanation_en": "The 'fs' (file system) module provides APIs for interacting with the file system.",
+    "explanation_ar": "وحدة 'fs' (نظام الملفات) توفر APIs للتفاعل مع نظام الملفات."
+  },
+  {
+    "id": 37,
+    "type": "true_false",
+    "question_en": "Message queues help in building scalable distributed systems.",
+    "question_ar": "طوابير الرسائل تساعد في بناء أنظمة موزعة قابلة للتوسع.",
+    "correct_answer": true,
+    "explanation_en": "Message queues enable asynchronous communication and help decouple system components for better scalability.",
+    "explanation_ar": "طوابير الرسائل تمكن التواصل غير المتزامن وتساعد في فصل مكونات النظام لتوسع أفضل."
+  },
+  {
+    "id": 38,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of database transactions?",
+    "question_ar": "ما هو الغرض من معاملات قاعدة البيانات؟",
+    "options_en": ["Data encryption", "Ensure data consistency", "Improve performance", "Reduce storage"],
+    "options_ar": ["تشفير البيانات", "ضمان اتساق البيانات", "تحسين الأداء", "تقليل التخزين"],
+    "correct_answer": 1,
+    "explanation_en": "Database transactions ensure data consistency by grouping operations that must all succeed or all fail.",
+    "explanation_ar": "معاملات قاعدة البيانات تضمن اتساق البيانات بتجميع العمليات التي يجب أن تنجح كلها أو تفشل كلها."
+  },
+  {
+    "id": 39,
+    "type": "true_false",
+    "question_en": "JWT tokens should be stored in localStorage for security.",
+    "question_ar": "رموز JWT يجب تخزينها في localStorage للأمان.",
+    "correct_answer": false,
+    "explanation_en": "Storing JWT in localStorage can be vulnerable to XSS attacks; httpOnly cookies are more secure.",
+    "explanation_ar": "تخزين JWT في localStorage يمكن أن يكون عرضة لهجمات XSS؛ ملفات تعريف الارتباط httpOnly أكثر أماناً."
+  },
+  {
+    "id": 40,
+    "type": "multiple_choice",
+    "question_en": "What does CDN stand for?",
+    "question_ar": "ماذا يعني CDN؟",
+    "options_en": ["Content Delivery Network", "Central Data Network", "Cloud Distribution Network", "Cached Data Network"],
+    "options_ar": ["شبكة توصيل المحتوى", "شبكة البيانات المركزية", "شبكة التوزيع السحابية", "شبكة البيانات المخزنة"],
+    "correct_answer": 0,
+    "explanation_en": "CDN stands for Content Delivery Network, which distributes content across multiple geographic locations.",
+    "explanation_ar": "CDN يعني شبكة توصيل المحتوى، التي توزع المحتوى عبر مواقع جغرافية متعددة."
+  },
+  {
+    "id": 41,
+    "type": "true_false",
+    "question_en": "Database sharding is a horizontal scaling technique.",
+    "question_ar": "تقسيم قاعدة البيانات هو تقنية توسع أفقي.",
+    "correct_answer": true,
+    "explanation_en": "Database sharding distributes data across multiple databases, which is a horizontal scaling approach.",
+    "explanation_ar": "تقسيم قاعدة البيانات يوزع البيانات عبر قواعد بيانات متعددة، وهو نهج توسع أفقي."
+  },
+  {
+    "id": 42,
+    "type": "multiple_choice",
+    "question_en": "Which HTTP status code indicates server error?",
+    "question_ar": "أي رمز حالة HTTP يشير إلى خطأ في الخادم؟",
+    "options_en": ["400", "401", "404", "500"],
+    "options_ar": ["400", "401", "404", "500"],
+    "correct_answer": 3,
+    "explanation_en": "HTTP status code 500 indicates an internal server error.",
+    "explanation_ar": "رمز حالة HTTP 500 يشير إلى خطأ داخلي في الخادم."
+  },
+  {
+    "id": 43,
+    "type": "true_false",
+    "question_en": "Kubernetes is only used for container orchestration.",
+    "question_ar": "Kubernetes يُستخدم فقط لتنسيق الحاويات.",
+    "correct_answer": false,
+    "explanation_en": "While primarily for container orchestration, Kubernetes also handles service discovery, load balancing, and more.",
+    "explanation_ar": "بينما يُستخدم بشكل أساسي لتنسيق الحاويات، Kubernetes يتعامل أيضاً مع اكتشاف الخدمات وتوزيع الأحمال وأكثر."
+  },
+  {
+    "id": 44,
+    "type": "multiple_choice",
+    "question_en": "What is the primary benefit of using connection pooling?",
+    "question_ar": "ما هي الفائدة الأساسية من استخدام تجميع الاتصالات؟",
+    "options_en": ["Security", "Performance", "Storage", "Backup"],
+    "options_ar": ["الأمان", "الأداء", "التخزين", "النسخ الاحتياطي"],
+    "correct_answer": 1,
+    "explanation_en": "Connection pooling improves performance by reusing database connections instead of creating new ones.",
+    "explanation_ar": "تجميع الاتصالات يحسن الأداء بإعادة استخدام اتصالات قاعدة البيانات بدلاً من إنشاء جديدة."
+  },
+  {
+    "id": 45,
+    "type": "true_false",
+    "question_en": "Serverless computing means there are no servers involved.",
+    "question_ar": "الحوسبة بدون خادم تعني عدم وجود خوادم متضمنة.",
+    "correct_answer": false,
+    "explanation_en": "Serverless means developers don't manage servers directly; the cloud provider handles server management.",
+    "explanation_ar": "بدون خادم يعني أن المطورين لا يديرون الخوادم مباشرة؛ مزود السحابة يتعامل مع إدارة الخادم."
+  },
+  {
+    "id": 46,
+    "type": "multiple_choice",
+    "question_en": "Which authentication flow is most secure for SPAs?",
+    "question_ar": "أي تدفق مصادقة هو الأكثر أماناً لـ SPAs؟",
+    "options_en": ["Implicit flow", "Authorization Code with PKCE", "Resource Owner Password", "Client Credentials"],
+    "options_ar": ["التدفق الضمني", "رمز التفويض مع PKCE", "كلمة مرور مالك المورد", "بيانات اعتماد العميل"],
+    "correct_answer": 1,
+    "explanation_en": "Authorization Code flow with PKCE (Proof Key for Code Exchange) is the most secure for SPAs.",
+    "explanation_ar": "تدفق رمز التفويض مع PKCE (مفتاح الإثبات لتبادل الرمز) هو الأكثر أماناً لـ SPAs."
+  },
+  {
+    "id": 47,
+    "type": "true_false",
+    "question_en": "Database replication can improve both performance and availability.",
+    "question_ar": "تكرار قاعدة البيانات يمكن أن يحسن الأداء والتوفر معاً.",
+    "correct_answer": true,
+    "explanation_en": "Database replication provides read scalability and failover capabilities, improving both performance and availability.",
+    "explanation_ar": "تكرار قاعدة البيانات يوفر قابلية توسع القراءة وقدرات التبديل الاحتياطي، مما يحسن الأداء والتوفر."
+  },
+  {
+    "id": 48,
+    "type": "multiple_choice",
+    "question_en": "What is the purpose of rate limiting in APIs?",
+    "question_ar": "ما هو الغرض من تحديد المعدل في APIs؟",
+    "options_en": ["Data validation", "Prevent abuse", "Improve security", "All of the above"],
+    "options_ar": ["التحقق من البيانات", "منع الإساءة", "تحسين الأمان", "جميع ما سبق"],
+    "correct_answer": 3,
+    "explanation_en": "Rate limiting prevents API abuse, improves security, and can include validation aspects.",
+    "explanation_ar": "تحديد المعدل يمنع إساءة استخدام API ويحسن الأمان ويمكن أن يتضمن جوانب التحقق."
+  },
+  {
+    "id": 49,
+    "type": "true_false",
+    "question_en": "Horizontal scaling means adding more power to existing servers.",
+    "question_ar": "التوسع الأفقي يعني إضافة قوة أكثر للخوادم الموجودة.",
+    "correct_answer": false,
+    "explanation_en": "Horizontal scaling means adding more servers; adding power to existing servers is vertical scaling.",
+    "explanation_ar": "التوسع الأفقي يعني إضافة خوادم أكثر؛ إضافة قوة للخوادم الموجودة هو توسع عمودي."
+  },
+  {
+    "id": 50,
+    "type": "multiple_choice",
+    "question_en": "Which caching strategy updates cache when data changes?",
+    "question_ar": "أي استراتيجية تخزين مؤقت تحدث التخزين المؤقت عند تغيير البيانات؟",
+    "options_en": ["Cache-aside", "Write-through", "Write-behind", "Refresh-ahead"],
+    "options_ar": ["التخزين المؤقت الجانبي", "الكتابة المباشرة", "الكتابة المؤجلة", "التحديث المسبق"],
+    "correct_answer": 1,
+    "explanation_en": "Write-through caching updates the cache immediately when data is written to the database.",
+    "explanation_ar": "التخزين المؤقت بالكتابة المباشرة يحدث التخزين المؤقت فوراً عند كتابة البيانات إلى قاعدة البيانات."
+  }
+]
